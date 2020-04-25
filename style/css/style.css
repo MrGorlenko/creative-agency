@@ -649,6 +649,7 @@ template {
   width: 371px;
   margin-bottom: 30px;
   text-align: end;
+  color: #FCFBF7;
 }
 
 .about__title_r {
@@ -816,9 +817,11 @@ template {
 
 .reason {
   padding-bottom: 90px;
+  position: relative;
 }
 
 .reason__container {
+  top: 0 !important;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -869,6 +872,7 @@ template {
 }
 
 .circles {
+  right: 0;
   width: 520px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -926,16 +930,11 @@ template {
   font-family: Montserrat;
   font-size: 24px;
   color: #B3B2AD;
-  -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
-          transform: matrix(-1, 0, 0, 1, 0, 0);
   text-align: end;
   font-weight: 100;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: end;
