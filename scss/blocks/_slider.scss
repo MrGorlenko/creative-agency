@@ -1,0 +1,117 @@
+.slider{
+    min-height: 800px;
+    width: 100%;
+    background: #272727;
+    margin-top: -1px;
+    &__content{
+        margin-left: 10%;
+    }
+    &__container{
+        padding-top: 250px;
+    }
+    &__services{
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 29px;
+        color: #fff;
+    }
+    &__title{
+        font-family: Anglecia Pro Title;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 50px;
+        line-height: 50px;
+        color: #fff;
+    }
+    &__paragraph{
+        font-family: Montserrat;
+        // font-style: normal;
+        // font-weight: normal;
+        font-size: 24px;
+        line-height: 29px;
+        width: 643px;
+        height: 58px;
+        font-weight:200;
+        color: #B3B2AD;
+    }
+    &__link{
+        font-family: Montserrat;
+        // font-style: italic;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 22px;
+        color: #2FFF97;
+        text-decoration: none;
+        margin-left: 20px;
+        display: flex;
+        width: 210px;
+        justify-content: space-between;
+        align-items: center;
+        &:hover{
+            font-style: italic;
+            // transition: 1s;
+        }
+        
+    }
+    &__line{
+        width: 240px;
+        margin-left: 0;
+        color: #2FFF97;
+        border: 1.5px solid #2FFF97;
+        margin-top: 15px;
+        &_white{
+            width: 325px;
+            position: absolute;
+            right: 0;
+            margin-top: -35px;
+        }
+    }
+    &__list{
+        margin-top: 50px;
+        list-style-type: none;
+        padding-left: 10px;
+        li{
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 200;
+            font-size: 18px;
+            line-height: 22px;
+            color: #B3B2AD;
+            margin-top: 2px;
+            position: relative;
+            align-items: center;
+
+            &::before{
+                position: absolute;
+                top: -2px;
+                left: -15px;
+                display: inline-block;
+                content: url('../../img/slider/list-marker.svg');
+            }
+        }
+    }
+    &__slider{
+        padding-left: 35px;
+    }
+    &__next-label{
+        text-align: end;
+        padding-right: 250px;
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        color: #FCFBF7;
+        text-transform: capitalize;
+        &_m{
+            padding-right: 235px;
+        }
+        &_w{
+            padding-right: 240px;
+        }
+        &_d{
+            padding-right: 265px;
+        }
+    }
+}

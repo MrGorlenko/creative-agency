@@ -1,0 +1,36 @@
+.circles{
+    width: 520px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.circle{
+    background: rgba($color: #272727, $alpha: .1);
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__quality{
+        // top: 0;
+        left: 22%;
+        margin-top: -8%;
+    }
+    &__cost{
+        margin-top: 22%;
+    }
+    &__speed{
+        margin-top: 26%;
+        left: 37%;
+    }
+    &__label{
+        font-family: Anglecia Pro Title;
+        font-style: italic;
+        font-weight: bold;
+        font-size: 28px;
+        color: #272727
+    }
+}
