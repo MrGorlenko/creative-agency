@@ -9,7 +9,7 @@ $(document).ready(function() {
     duration:200, property:'height', start:7 +'em', end: 30 + 'em', baseline: "bottom"}
     )
   scrollorama.animate('#aboutScroll',{
-    duration:500, property:'margin-top', start:-60 +'px', end: -465 + 'px', baseline: "bottom"}
+    duration:500, property:'margin-top', start:-60 +'px', end: -455 + 'px', baseline: "bottom"}
     )
 
   var scrollorama_line = $.scrollorama({
@@ -17,7 +17,7 @@ $(document).ready(function() {
   });
 
   scrollorama_line.animate('.about__down', {
-    duration: 0, property: 'min-height', start: 0 + 'px', end: 1280 + 'px', baseline: "top"
+    duration: 500, property: 'min-height', start: 0 + 'px', end: 1280 + 'px', baseline: "top"
   })
 
   var scrollorama_text = $.scrollorama({
