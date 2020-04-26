@@ -258,7 +258,7 @@ gsap.from(".eight-r", {
         })
       
         scrollorama_text.animate('.about__block', {
-          duration: 800, property: 'left', start: -1000 + 'px' , end: 0, baseline: "bottom"
+          duration: 600, property: 'left', start: -1000 + 'px' , end: 0, baseline: "bottom"
         })
       
         scrollorama_text.animate('.about__block_r', {
@@ -269,7 +269,7 @@ gsap.from(".eight-r", {
       
         scrollorama_text.animate('.about__block_r', {
           delay: -100,
-          duration: 200, property: 'left', start: -500 + 'px' , end: 0
+          duration: 700, property: 'left', start: -500 + 'px' , end: 0
           //  baseline: "bottom"
         })
 
