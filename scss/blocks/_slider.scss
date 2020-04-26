@@ -115,3 +115,60 @@
         }
     }
 }
+
+@media (max-width: 992px){
+    .slider{
+        min-height: 715px;
+        &__container{
+            padding-top: 150px;
+        }
+        &__services{
+            font-size: 18px;
+        }
+        &__title{
+            font-size: 40px;
+
+        }
+        &__paragraph{
+            height: 75px;
+            font-size: 19px;
+            line-height: 25px;
+            width: 400px;
+        }
+        &__next{
+            &-label{
+                display: none;
+            }
+        }
+        &__line{
+            &_white{
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px){
+    .slider{
+        min-height: 660px;
+        &__container{
+            padding-top: 100px;
+        }
+        &__content{
+            margin-left: 4%;
+        }
+        &__title{
+            width: 300px;
+            font-size: 36px;
+        }
+        &__slider{
+            padding-left: 0;
+        }
+        &__paragraph{
+            height: 95px;
+            width: 260px;
+            font-size: 16px;
+            line-height: 22px;
+        }
+    }
+}

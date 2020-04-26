@@ -2,15 +2,21 @@ $(document).ready(function() {
   var scrollorama = $.scrollorama({
       blocks:'.about__push'
   });
-  scrollorama.animate('#aboutScroll',{
-    duration:500, property:'width', start:14 +'em', end: 95*2 + 'em', baseline: "bottom"}
-    )
-  scrollorama.animate('#aboutScroll',{
-    duration:200, property:'height', start:7 +'em', end: 30 + 'em', baseline: "bottom"}
-    )
-  scrollorama.animate('#aboutScroll',{
-    duration:500, property:'margin-top', start:-60 +'px', end: -455 + 'px', baseline: "bottom"}
-    )
+  // scrollorama.animate('#aboutScroll',{
+  //   duration:500, property:'width', start:14 +'em', end: 95*2 + 'em', baseline: "bottom"}
+  //   )
+  // scrollorama.animate('#aboutScroll',{
+  //   duration:200, property:'height', start:7 +'em', end: 30 + 'em', baseline: "bottom"}
+  //   )
+  // scrollorama.animate('#aboutScroll',{
+  //   duration:500, property:'margin-top', start:-60 +'px', end: -455 + 'px', baseline: "bottom"}
+  //   )
+
+
+  
+
+
+
 
   var scrollorama_line = $.scrollorama({
       blocks:'.about__line'
@@ -24,25 +30,25 @@ $(document).ready(function() {
     blocks:'.about__container_labels'
   });
 
-  scrollorama_text.animate('.about__block', {
-    duration: 400, property: 'opacity', start: 0 , end: 1, baseline: "top"
-  })
+  // scrollorama_text.animate('.about__block', {
+  //   duration: 400, property: 'opacity', start: 0 , end: 1, baseline: "top"
+  // })
 
-  scrollorama_text.animate('.about__block', {
-    duration: 800, property: 'left', start: -1000 + 'px' , end: 0, baseline: "bottom"
-  })
+  // scrollorama_text.animate('.about__block', {
+  //   duration: 800, property: 'left', start: -1000 + 'px' , end: 0, baseline: "bottom"
+  // })
 
-  scrollorama_text.animate('.about__block_r', {
-    // delay: -530,
-    duration: 600, property: 'opacity', start: 0 , end: 1, 
-     baseline: "top"
-  })
+  // scrollorama_text.animate('.about__block_r', {
+  //   // delay: -530,
+  //   duration: 600, property: 'opacity', start: 0 , end: 1, 
+  //    baseline: "top"
+  // })
 
-  scrollorama_text.animate('.about__block_r', {
-    delay: -530,
-    duration: 1000, property: 'right', start: -1000 + 'px' , end: 0
-    //  baseline: "bottom"
-  })
+  // scrollorama_text.animate('.about__block_r', {
+  //   delay: -530,
+  //   duration: 1000, property: 'right', start: -100 + 'px' , end: 0
+  //   //  baseline: "bottom"
+  // })
 
 
   gsap.from(".first", {
@@ -197,6 +203,82 @@ gsap.from(".eight-r", {
     delay: 3.8, 
     // stagger: 0.2,
   });
+
+
+  function myFunctionCircle(y) {
+    if (y.matches) { 
+    scrollorama.animate('#aboutScroll',{
+      duration:500, property:'width', start:14 +'em', end: 95*2 + 'em', baseline: "bottom"}
+      )
+    scrollorama.animate('#aboutScroll',{
+      duration:200, property:'height', start:7 +'em', end: 30 + 'em', baseline: "bottom"}
+      )
+    scrollorama.animate('#aboutScroll',{
+      duration:500, property:'margin-top', start:-60 +'px', end: -255 + 'px', baseline: "bottom"}
+      )
+      scrollorama_text.animate('.about__block', {
+        duration: 400, property: 'opacity', start: 0 , end: 1, baseline: "top"
+      })
+    
+      scrollorama_text.animate('.about__block', {
+        duration: 800, property: 'left', start: -1000 + 'px' , end: 0, baseline: "bottom"
+      })
+    
+      scrollorama_text.animate('.about__block_r', {
+        // delay: -530,
+        duration: 600, property: 'opacity', start: 0 , end: 1, 
+         baseline: "top"
+      })
+    
+      scrollorama_text.animate('.about__block_r', {
+        delay: -530,
+        duration: 1000, property: 'right', start: -100 + 'px' , end: 0
+        //  baseline: "bottom"
+      })
+    } else {
+      scrollorama.animate('#aboutScroll',{
+        // delay: -100,
+        duration:500, property:'width', start:15 +'em', end: 35*2 + 'em', 
+        baseline: "bottom"
+      }
+        )
+      scrollorama.animate('#aboutScroll',{
+        // delay: -100,
+        duration:200, property:'height', start:5 +'em', end: 13 + 'em',
+         baseline: "bottom"
+        }
+        )
+      scrollorama.animate('#aboutScroll',{
+        duration:500, property:'margin-top', start:45 +'px', end: -180 + 'px', baseline: "bottom"}
+        )
+
+
+        scrollorama_text.animate('.about__block', {
+          duration: 400, property: 'opacity', start: 0 , end: 1, baseline: "bottom"
+        })
+      
+        scrollorama_text.animate('.about__block', {
+          duration: 800, property: 'left', start: -1000 + 'px' , end: 0, baseline: "bottom"
+        })
+      
+        scrollorama_text.animate('.about__block_r', {
+          delay: 50,
+          duration: 800, property: 'opacity', start: 0 , end: 1, 
+           baseline: "bottom"
+        })
+      
+        scrollorama_text.animate('.about__block_r', {
+          delay: -100,
+          duration: 200, property: 'left', start: -500 + 'px' , end: 0
+          //  baseline: "bottom"
+        })
+
+    }
+  }
+
+  var y = window.matchMedia("(min-width: 992px)")
+  myFunctionCircle(y)
+  y.addListener(myFunctionCircle)
 
 });
 

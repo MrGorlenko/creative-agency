@@ -8,6 +8,11 @@
       speed: 300,
       slidesToShow: 1,
       draggable: false,
+      fade: true,
+      cssEase: 'linear',
+      lazyLoad: 'progressive',
+      autoPlay: true
+      // vertical: true
       // asNavFor: '.slider__labels'
       // appendDots: $('.slider__dots'),
       // pauseOnDotsHover:true

@@ -207,3 +207,13 @@
     opacity: .75;
     color: black;
 }
+
+
+@media (max-width: 992px){
+    .slick-dots{
+        flex-direction: column;
+        width: 3%;
+        right: 30px;
+        bottom: 200px;
+    }
+}

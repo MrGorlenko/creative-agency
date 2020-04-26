@@ -45,3 +45,26 @@
     position: absolute;
     right: 50px;
 }
+
+@media (min-width: 993px){
+    .logo-mobile{
+        display: none;
+    }
+}
+
+@media (max-width: 992px){
+    .logo-desctop{
+        display: none;
+    }
+    .menu{
+        display: none;
+    }
+}
+
+@media (max-width: 576px){
+    .header{
+        &__container{
+            width: 90%;
+        }
+    }
+}

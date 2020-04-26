@@ -8,7 +8,7 @@ $(document).ready(function(){
     heroLabel = $('.hero__label_black');
 
     designTriange.mouseover(function() {
-        designTriange.css('border-bottom', '147px solid #8523CD');
+        // designTriange.css('border-bottom', '147px solid #8523CD');
         designTriange.css('transition', '0.5s');
         marketingLabel.css('color', '#B3B2AD');
         websitesLabel.css('color', '#B3B2AD');
@@ -19,7 +19,7 @@ $(document).ready(function(){
     });
 
     designTriange.mouseout(function() {
-        designTriange.css('border-bottom', '147px solid white');
+        // designTriange.css('border-bottom', '147px solid white');
         designTriange.css('transition', '0.5s');
         marketingLabel.css('color', 'black');
         websitesLabel.css('color', 'black');
@@ -30,7 +30,7 @@ $(document).ready(function(){
     });
 
     marketingTriange.mouseover(function() {
-        marketingTriange.css('border-bottom', '147px solid #8523CD');
+        // marketingTriange.css('border-bottom', '147px solid #8523CD');
         marketingTriange.css('transition', '0.5s');
         designLabel.css('color', '#B3B2AD');
         websitesLabel.css('color', '#B3B2AD');
@@ -41,7 +41,7 @@ $(document).ready(function(){
     });
 
     marketingTriange.mouseout(function() {
-        marketingTriange.css('border-bottom', '147px solid white');
+        // marketingTriange.css('border-bottom', '147px solid white');
         marketingTriange.css('transition', '0.5s');
         designLabel.css('color', 'black');
         websitesLabel.css('color', 'black');
@@ -52,7 +52,7 @@ $(document).ready(function(){
     });
 
     websitesTriange.mouseover(function() {
-        websitesTriange.css('border-bottom', '147px solid #8523CD');
+        // websitesTriange.css('border-bottom', '147px solid #8523CD');
         websitesTriange.css('transition', '0.5s');
         designLabel.css('color', '#B3B2AD');
         marketingLabel.css('color', '#B3B2AD');
@@ -63,7 +63,7 @@ $(document).ready(function(){
     });
 
     websitesTriange.mouseout(function() {
-        websitesTriange.css('border-bottom', '147px solid white');
+        // websitesTriange.css('border-bottom', '147px solid white');
         websitesTriange.css('transition', '0.5s');
         designLabel.css('color', 'black');
         marketingLabel.css('color', 'black');
@@ -72,4 +72,58 @@ $(document).ready(function(){
         heroLabel.css('color', 'black');
         heroLabel.css('transition', '0.7s');
     });
-})
+
+    function myFunction(x) {
+        if (x.matches) { 
+        marketingTriange.mouseover(function() {
+            marketingTriange.css('border-bottom', '147px solid #8523CD');
+            });
+        marketingTriange.mouseout(function() {
+            marketingTriange.css('border-bottom', '147px solid white');
+        });
+
+        designTriange.mouseover(function() {
+            designTriange.css('border-bottom', '147px solid #8523CD');
+        });
+        designTriange.mouseout(function() {
+            designTriange.css('border-bottom', '147px solid white');
+        });
+
+        websitesTriange.mouseover(function() {
+            websitesTriange.css('border-bottom', '147px solid #8523CD');
+        });
+        websitesTriange.mouseout(function() {
+            websitesTriange.css('border-bottom', '147px solid white');
+        });
+        } else {
+            marketingTriange.mouseover(function() {
+                marketingTriange.css('border-bottom', '121px solid #8523CD');
+                });
+            marketingTriange.mouseout(function() {
+                marketingTriange.css('border-bottom', '121px solid white');
+            });
+    
+            designTriange.mouseover(function() {
+                designTriange.css('border-bottom', '121px solid #8523CD');
+            });
+            designTriange.mouseout(function() {
+                designTriange.css('border-bottom', '121px solid white');
+            });
+    
+            websitesTriange.mouseover(function() {
+                websitesTriange.css('border-bottom', '121px solid #8523CD');
+            });
+            websitesTriange.mouseout(function() {
+                websitesTriange.css('border-bottom', '121px solid white');
+            });
+        }
+      }
+
+      var x = window.matchMedia("(min-width: 992px)")
+      myFunction(x)
+      x.addListener(myFunction)
+
+
+
+});
+

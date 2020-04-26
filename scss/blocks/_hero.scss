@@ -28,7 +28,7 @@
         color: #B3B2AD;
         &_black{
             color: black;
-            font-weight: 400;
+            font-weight: 800;
         }
         &:last-child{
             text-align: end;
@@ -56,8 +56,6 @@
 	border-left: 85px solid transparent;
 	border-right: 85px solid transparent;
     border-bottom: 147px solid white;
-    
-    // ANIMATOIN
 
     cursor: pointer;
 
@@ -80,5 +78,120 @@
     &_websites{
         bottom: -50px;
         right: -175px;
+    }
+}
+
+@media (max-width: 1260px){
+    .hero{
+        &__label{
+            font-size: 21px;
+        }
+        &__figures{
+            width: 530px;
+        }
+    }
+    .triangle-label{
+        font-size: 23px;
+        &_design{
+            top: 0;
+        }
+        &_marketing{
+            bottom: -45px;
+            left: -135px;
+        }
+        &_websites{
+            bottom: -45px;
+            right: -135px;
+        }
+    }
+}
+
+
+@media (max-width: 992px){
+    .hero{
+        margin-top: 15px;
+        border-top: 1px solid #B3B2AD;
+        &__container{
+            flex-direction: column;
+            min-height: 545px;
+        }
+        &__figures{
+            width: 300px;
+        }
+        &__label{
+            width: 265px;
+            font-size: 17px;
+            &:last-child{
+                margin-top: 55px;
+                width: 300px;
+            }
+        }
+    }
+
+    .triangle-up{
+        border-left: 62px solid transparent;
+        border-right: 62px solid transparent;
+        border-bottom: 125px solid black;
+        // z-index: -4;
+    }
+    
+    .triangle-down{
+        left: -60px;
+        border-left: 60px solid transparent;
+        border-right: 60px solid transparent;
+        border-bottom: 122px solid white;
+    
+        cursor: pointer;
+    
+    }
+
+    .triangle-label{
+        font-size: 21px;
+        &_design{
+            top: 0;
+        }
+        &_marketing{
+            bottom: -40px;
+            left: -20px;
+        }
+        &_websites{
+            bottom: -40px;
+            right: -20px;
+        }
+    }
+}
+
+@media (max-width: 576px){
+
+    .triangle-up{
+        border-left: 62px solid transparent;
+        border-right: 62px solid transparent;
+        border-bottom: 125px solid black;
+        // z-index: -4;
+    }
+    
+    .triangle-down{
+        left: -60px;
+        border-left: 60px solid transparent;
+        border-right: 60px solid transparent;
+        border-bottom: 122px solid white;
+    
+        cursor: pointer;
+    
+    }
+
+    .triangle-label{
+        font-size: 18px;
+        &_design{
+            top: 0;
+        }
+        &_marketing{
+            bottom: -40px;
+            left: -5px;
+        }
+        &_websites{
+            bottom: -40px;
+            right: -5px;
+        }
     }
 }
