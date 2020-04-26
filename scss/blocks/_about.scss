@@ -1,6 +1,6 @@
 .about{
     // height: 110vh;
-    min-height: 930px;
+    min-height: 1130px;
     width: 100%;
     background: #272727;
     // margin-top: 100px;
@@ -43,7 +43,7 @@
     &__block{
         // position: absolute;
         left: 50px;
-        margin-top: 350px;
+        margin-top: 200px;
         top: 150px;
         display: flex;
         flex-direction: column;
@@ -51,7 +51,7 @@
         &_r{
             align-items: flex-start;
             top: 150px;
-            margin-top: 500px;
+            margin-top: 600px;
         }
     }
     &__line{

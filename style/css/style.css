@@ -553,7 +553,7 @@ template {
 }
 
 .about {
-  min-height: 930px;
+  min-height: 1130px;
   width: 100%;
   background: #272727;
 }
@@ -596,7 +596,7 @@ template {
 
 .about__block {
   left: 50px;
-  margin-top: 350px;
+  margin-top: 200px;
   top: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -615,7 +615,7 @@ template {
       -ms-flex-align: start;
           align-items: flex-start;
   top: 150px;
-  margin-top: 500px;
+  margin-top: 600px;
 }
 
 .about__line {

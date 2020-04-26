@@ -29,15 +29,19 @@ $(document).ready(function() {
   })
 
   scrollorama_text.animate('.about__block', {
-    duration: 300, property: 'left', start: -1000 + 'px' , end: 0, baseline: "top"
+    duration: 800, property: 'left', start: -1000 + 'px' , end: 0, baseline: "bottom"
   })
 
   scrollorama_text.animate('.about__block_r', {
-    duration: 500, property: 'opacity', start: 0 , end: 1, baseline: "top"
+    // delay: -530,
+    duration: 600, property: 'opacity', start: 0 , end: 1, 
+     baseline: "top"
   })
 
   scrollorama_text.animate('.about__block_r', {
-    duration: 400, property: 'right', start: -1000 + 'px' , end: 0, baseline: "top"
+    delay: -530,
+    duration: 1000, property: 'right', start: -1000 + 'px' , end: 0
+    //  baseline: "bottom"
   })
 
 
