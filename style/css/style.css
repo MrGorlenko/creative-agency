@@ -1358,7 +1358,7 @@ template {
     height: 700px;
   }
   .form__container {
-    padding-left: 10%;
+    padding-left: 5%;
     padding-top: 10%;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -1371,7 +1371,7 @@ template {
     width: 240px;
   }
   .form__input_message {
-    width: 100%;
+    width: 95%;
   }
 }
 /*# sourceMappingURL=style.css.map */
