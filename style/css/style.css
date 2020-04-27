@@ -389,7 +389,12 @@ template {
 }
 
 .header__menu_white span {
+  cursor: pointer;
   border: 1px solid #FCFBF7 !important;
+  -webkit-animation-duration: 200ms;
+          animation-duration: 200ms;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .header__menu span {
@@ -422,6 +427,29 @@ template {
 
 .menu_white {
   color: #FCFBF7;
+}
+
+.line_up {
+  margin-top: 12px;
+  -webkit-transform: rotate(0.1turn);
+          transform: rotate(0.1turn);
+  margin-top: 10px;
+  -webkit-animation-duration: 200ms;
+          animation-duration: 200ms;
+  -webkit-transition: 1s;
+  transition: 1s;
+  width: 32px;
+}
+
+.line_down {
+  -webkit-transform: rotate(-0.1turn);
+          transform: rotate(-0.1turn);
+  width: 32px !important;
+  margin-top: -2px !important;
+  -webkit-animation-duration: 200ms;
+          animation-duration: 200ms;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 @media (min-width: 993px) {
@@ -891,6 +919,10 @@ template {
 
 .slider__content {
   margin-left: 10%;
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .slider__container {
@@ -913,6 +945,10 @@ template {
   font-size: 50px;
   line-height: 50px;
   color: #fff;
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .slider__paragraph {
@@ -943,10 +979,7 @@ template {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.slider__link:hover {
-  font-style: italic;
+  cursor: pointer;
 }
 
 .slider__line {
@@ -962,6 +995,10 @@ template {
   position: absolute;
   right: 0;
   margin-top: -35px;
+  -webkit-animation-duration: 500ms;
+          animation-duration: 500ms;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .slider__list {
@@ -992,10 +1029,6 @@ template {
   content: url("../../img/slider/list-marker.svg");
 }
 
-.slider__slider {
-  padding-left: 35px;
-}
-
 .slider__next-label {
   text-align: end;
   padding-right: 250px;
@@ -1005,6 +1038,10 @@ template {
   font-size: 18px;
   color: #FCFBF7;
   text-transform: capitalize;
+  -webkit-animation-duration: 200ms;
+          animation-duration: 200ms;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 .slider__next-label_m {
@@ -1017,6 +1054,115 @@ template {
 
 .slider__next-label_d {
   padding-right: 265px;
+}
+
+.slider__portfolio {
+  color: #FCFBF7;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.slider__pictures {
+  position: absolute;
+  width: 80%;
+  height: 800px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.slider__pic {
+  background: #C4C4C4;
+  width: 45%;
+  height: 306px;
+}
+
+.text_none {
+  opacity: 0;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.text_active {
+  opacity: 1;
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.text_up {
+  margin-top: -25px;
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.text_up_340 {
+  position: absolute;
+  top: 25px;
+  right: 0;
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.text_up_330 {
+  top: 330px;
+  -webkit-animation-duration: 500ms;
+          animation-duration: 500ms;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.text_up_860 {
+  margin-top: -860px;
+  -webkit-animation-duration: 500ms;
+          animation-duration: 500ms;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.top_120 {
+  top: 120px;
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.height_900 {
+  height: 900px;
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.fz_40 {
+  font-size: 40px;
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 @media (max-width: 992px) {
