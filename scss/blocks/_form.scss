@@ -1,6 +1,11 @@
 .form{
     background: #272727;
     height: 900px;
+    &__logo{
+        padding-top: 50px;
+        width: 80%;
+        margin: auto;
+    }
     &__title{
         font-family: Montserrat;
         font-size: 24px;
@@ -13,7 +18,7 @@
         align-items: end;
     }
     &__container{
-        min-height: 100%;
+        min-height: 90%;
         padding-left: 40%;
         display: flex;
         justify-content: center;

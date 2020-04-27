@@ -1076,6 +1076,12 @@ template {
   position: relative;
 }
 
+.reason__logo {
+  padding-top: 50px;
+  width: 80%;
+  margin: auto;
+}
+
 .reason__container {
   top: 0 !important;
   display: -webkit-box;
@@ -1084,7 +1090,7 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 190px;
+  padding-top: 130px;
 }
 
 .reason__title {
@@ -1135,6 +1141,9 @@ template {
 }
 
 @media (max-width: 992px) {
+  .reason__logo {
+    display: none;
+  }
   .reason__container {
     width: 95%;
     -webkit-box-orient: vertical;
@@ -1310,6 +1319,12 @@ template {
   height: 900px;
 }
 
+.form__logo {
+  padding-top: 50px;
+  width: 80%;
+  margin: auto;
+}
+
 .form__title {
   font-family: Montserrat;
   font-size: 24px;
@@ -1325,7 +1340,7 @@ template {
 }
 
 .form__container {
-  min-height: 100%;
+  min-height: 90%;
   padding-left: 40%;
   display: -webkit-box;
   display: -ms-flexbox;

@@ -1,11 +1,16 @@
 .reason{
     padding-bottom: 90px;
     position: relative;
+    &__logo{
+        padding-top: 50px;
+        width: 80%;
+        margin: auto;
+    }
     &__container{
         top: 0 !important; 
         display: flex;
         justify-content: space-between;
-        padding-top: 190px;
+        padding-top: 130px;
     }
     &__title{
         font-family: Anglecia Pro Title;
@@ -54,6 +59,9 @@
 
 @media (max-width:992px){
     .reason{
+        &__logo{
+            display: none;
+        }
         &__container{
             width: 95%;
             flex-direction:column;
