@@ -838,6 +838,9 @@ template {
   .about {
     min-height: 950px;
   }
+  .about__header {
+    display: none;
+  }
   .about__scroll {
     margin-top: -150px;
   }

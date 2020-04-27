@@ -131,7 +131,13 @@
 @media (max-width: 992px){
 
     .about{
+
         min-height: 950px;
+
+        &__header{
+            display: none;
+        }
+
         &__scroll{
             margin-top: -150px;
         }
