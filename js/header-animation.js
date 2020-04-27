@@ -20,10 +20,25 @@ $(document).ready(function() {
         duration: 1900, property:'opacity', start:0 , end:1, basline: 'bottom'
     })
 
-    scrollHeader.animate('.about-header__container', {
+    // scrollHeader.animate('.about-header__container', {
+    //     delay: 2000,
+    //     duration: 1900, property:'left', start:0 , end:-3000 + 'px', basline: 'top'
+    // })
+
+    scrollHeader.animate('.header__icon', {
         delay: 2000,
         duration: 1900, property:'left', start:0 , end:-3000 + 'px', basline: 'top'
     })
+
+    scrollHeader.animate('.header__menu_white', {
+        delay: 2000,
+        duration: 1900, property:'right', start:0 , end:-3000 + 'px', basline: 'top'
+    })
+
+    // scrollHeader.animate('.about-header__container', {
+    //     delay: 2000,
+    //     duration: 1900, property:'width', start:80 + '%' , end:3000 + '%', basline: 'top'
+    // })
 
     // scrollHeader.animate('.about-header__container', {
     //     delay: 2000,
