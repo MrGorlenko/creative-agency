@@ -911,7 +911,7 @@ template {
 }
 
 .slider {
-  min-height: 800px;
+  min-height: 850px;
   width: 100%;
   background: #272727;
   margin-top: -1px;
@@ -959,6 +959,7 @@ template {
   height: 58px;
   font-weight: 200;
   color: #B3B2AD;
+  height: 85px;
 }
 
 .slider__link {
@@ -1277,6 +1278,71 @@ template {
   width: 115px;
   height: 115px;
   background: #C4C4C4;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.reason__item_1 {
+  background: url("../../img/reasons/logo1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.reason__item_2 {
+  background: url("../../img/reasons/logo2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.reason__item_3 {
+  background: url("../../img/reasons/logo3.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.reason__item_4 {
+  background: url("../../img/reasons/logo4.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.reason__item_5 {
+  background: url("../../img/reasons/logo5.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.reason__item_6 {
+  background: url("../../img/reasons/logo6.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.reason__item_7 {
+  background: url("../../img/reasons/logo7.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.reason__item_8 {
+  background: url("../../img/reasons/logo8.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.reason__item_9 {
+  background: url("../../img/reasons/logo9.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 @media (max-width: 1200px) {

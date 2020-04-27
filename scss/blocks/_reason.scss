@@ -41,9 +41,67 @@
         width: 115px;
         height: 115px;
         background: #C4C4C4;
-        // margin-right: 50px;
-        // &:last-child{
-        //     margin-right: 0;
+        background-position: center;
+        background-repeat: no-repeat;
+        &_1{
+            background: url('../../img/reasons/logo1.png');
+            background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        }
+        &_2{
+            background: url('../../img/reasons/logo2.png');
+            background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        }
+        &_3{
+            background: url('../../img/reasons/logo3.png');
+            background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        }
+        &_4{
+            background: url('../../img/reasons/logo4.png');
+            background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        }
+        &_5{
+            background: url('../../img/reasons/logo5.png');
+            background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        }
+        &_6{
+            background: url('../../img/reasons/logo6.png');
+            background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        }
+        &_7{
+            background: url('../../img/reasons/logo7.png');
+            background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        }
+        &_8{
+            background: url('../../img/reasons/logo8.png');
+            background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        }
+        &_9{
+            background: url('../../img/reasons/logo9.png');
+            background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        }
+        // &_10{
+        //     background: url('../../img/reasons/logo10.png');
+        // }
+        // &_11{
+        //     background: url('../../img/reasons/logo11.png');
         // }
     }
 }

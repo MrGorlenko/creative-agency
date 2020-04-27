@@ -216,12 +216,13 @@ gsap.from(".eight-r", {
     scrollorama.animate('#aboutScroll',{
       duration:500, property:'margin-top', start:-60 +'px', end: -255 + 'px', baseline: "bottom"}
       )
-      scrollorama_text.animate('.about__block', {
-        duration: 400, property: 'opacity', start: 0 , end: 1, baseline: "top"
-      })
+      // scrollorama_text.animate('.about__block', {
+      //   duration: 400, property: 'opacity', start: 0 , end: 1, baseline: "top"
+      // })
     
       scrollorama_text.animate('.about__block', {
-        duration: 800, property: 'left', start: -1000 + 'px' , end: 0, baseline: "bottom"
+        delay:100,
+        duration: 700, property: 'left', start: -1000 + 'px' , end: 0, baseline: "bottom"
       })
     
       scrollorama_text.animate('.about__block_r', {
@@ -231,8 +232,8 @@ gsap.from(".eight-r", {
       })
     
       scrollorama_text.animate('.about__block_r', {
-        delay: -530,
-        duration: 1000, property: 'right', start: -100 + 'px' , end: 0
+        // delay: -530,
+        duration: 400, property: 'right', start: -200 + 'px' , end: 0
         //  baseline: "bottom"
       })
     } else {
