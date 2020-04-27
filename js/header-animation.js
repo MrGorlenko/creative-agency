@@ -13,11 +13,28 @@ $(document).ready(function() {
     //   )
 
     var scrollHeader = $.scrollorama({
-        blocks: '.header'
+        blocks: '.about__header'
     });
 
-    scrollHeader.animate('.header__container', {
-        duration: 300, property:'opacity', start:1 , end:0, basline: 'top'
+    scrollHeader.animate('.about-header__container', {
+        duration: 1900, property:'opacity', start:0 , end:1, basline: 'bottom'
     })
+
+    scrollHeader.animate('.about-header__container', {
+        delay: 2000,
+        duration: 1900, property:'left', start:0 , end:-3000 + 'px', basline: 'top'
+    })
+
+    // scrollHeader.animate('.about-header__container', {
+    //     delay: 2000,
+    //     duration: 1900, property:'opacity', start:1 , end:0, basline: 'top'
+    // })
+
+
+
+    // scrollHeader.animate('.about-header__container', {
+    //     delay: 600,
+    //     duration: 1900, property:'opacity', start:1 , end:0, basline: 'top'
+    // })
 
 })

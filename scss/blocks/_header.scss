@@ -17,6 +17,11 @@
         }
     }
     &__menu{
+        &_white{
+            span{
+                border: 1px solid #FCFBF7 !important;
+            }
+        }
         span{
             margin-top: 16%;
             display: block;
@@ -44,6 +49,9 @@
     line-height: 22px;
     position: absolute;
     right: 50px;
+    &_white{
+        color: #FCFBF7;
+    }
 }
 
 @media (min-width: 993px){

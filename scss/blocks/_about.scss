@@ -6,6 +6,12 @@
     // margin-top: 100px;
     // margin-top: 160px;
 
+    &__header{
+        z-index: 3;
+        position: fixed !important;
+        top: 3%;
+        width: 100%;
+    }
     &__container{
         &_labels{
             top: 0 !important;
@@ -105,6 +111,13 @@
 .line{
     display: flex;
     justify-content: center;
+}
+
+.about-header{
+    &__container{
+        width: 80%;
+        margin: auto;
+    }
 }
 
 @media (max-width: 1100px){
