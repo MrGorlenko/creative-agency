@@ -174,6 +174,8 @@
           $(".slider__next-label_d").addClass('margin_top_15');
           $(".slider__next-label_p").addClass('padding_top_0');
           $(".slider__next-label_m").addClass('padding_top_0');
+
+          $(".slick-next").addClass('top_92');
         })
 
         menuMobile.on('click', function(){
@@ -216,6 +218,8 @@
         $(".slider__next-label_d").removeClass('margin_top_15');
         $(".slider__next-label_p").removeClass('padding_top_0');
         $(".slider__next-label_m").removeClass('padding_top_0');
+
+        $(".slick-next").removeClass('top_92');
         // hieght_width_20
         })
         

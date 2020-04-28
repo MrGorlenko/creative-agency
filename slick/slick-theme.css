@@ -101,6 +101,12 @@
 .slick-next
 {
     /* right: -25px; */
+    animation-duration: 2000ms;
+                -webkit-transition: 2s;
+                -moz-transition: 2s;
+                -ms-transition: 2s;
+                -o-transition: 2s;
+                transition: 2s;
 }
 [dir='rtl'] .slick-next
 {
@@ -222,6 +228,8 @@
         right: 30px;
         bottom: 200px;
         justify-content: center !important;
+        width: 75%;
+        left: 0;
     
     }
 }

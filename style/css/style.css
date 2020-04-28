@@ -1276,6 +1276,14 @@ template {
   transition: 2s;
 }
 
+.top_92 {
+  top: 92%;
+  -webkit-animation-duration: 2000ms;
+          animation-duration: 2000ms;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
 .fz_24 {
   font-size: 24px !important;
   -webkit-animation-duration: 2000ms;
