@@ -217,22 +217,24 @@ gsap.from(".eight-r", {
       duration:500, property:'margin-top', start:-60 +'px', end: -255 + 'px', baseline: "bottom"}
       )
       // scrollorama_text.animate('.about__block', {
-      //   duration: 400, property: 'opacity', start: 0 , end: 1, baseline: "top"
+      //   delay:100,
+      //   duration: 1200, property: 'opacity', start: 0 , end: 1, baseline: "top"
       // })
     
       scrollorama_text.animate('.about__block', {
-        delay:100,
-        duration: 700, property: 'left', start: -1000 + 'px' , end: 0, baseline: "bottom"
+        delay:300,
+        duration: 400, property: 'left', start: -300 + 'px' , end: 0, baseline: "bottom"
       })
+    
+      // scrollorama_text.animate('.about__block_r', {
+      //   // delay: -530,
+      //   duration: 600, property: 'opacity', start: 0 , end: 1, 
+      //    baseline: "top"
+      // })
     
       scrollorama_text.animate('.about__block_r', {
         // delay: -530,
-        duration: 600, property: 'opacity', start: 0 , end: 1, 
-         baseline: "top"
-      })
-    
-      scrollorama_text.animate('.about__block_r', {
-        // delay: -530,
+        delay:0,
         duration: 400, property: 'right', start: -200 + 'px' , end: 0
         //  baseline: "bottom"
       })
@@ -298,6 +300,21 @@ gsap.from(".eight-r", {
   var y = window.matchMedia("(min-width: 992px)")
   myFunctionCircle(y)
   y.addListener(myFunctionCircle)
+
+  $("#individuals").on("click", function (event) {
+            //отменяем стандартную обработку нажатия по ссылке
+            event.preventDefault();
+     
+            // //забираем идентификатор бока с атрибута href
+            // var id  = $(this).attr('href'),
+            var id = $("#reason-id"),
+            // //узнаем высоту от начала страницы до блока на который ссылается якорь
+                top = $(id).offset().top;
+             
+            // //анимируем переход на расстояние - top за 1500 мс
+            $('body,html').animate({scrollTop: top}, 1500);
+        });
+    
 
 });
 
