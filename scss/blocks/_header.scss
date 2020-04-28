@@ -96,8 +96,42 @@
     .logo-desctop{
         display: none;
     }
-    .menu{
-        display: none;
+    .header{
+        z-index: 900;
+        margin-top: -15px;
+        padding-top: 15px;
+        height: 34px;
+        border-bottom: 1px solid #B3B2AD;
+        position: fixed !important;
+        width: 100%;
+        background: white;
+        &__menu{
+            animation-duration: 200ms;
+    -webkit-transition: 2s;
+    -moz-transition: 2s;
+    -ms-transition: 2s;
+    -o-transition: 2s;
+    transition: 2s;
+        }
+    }
+    // .menu{
+    //     display: none;
+    // }
+    .line-up{
+        animation-duration: 100ms;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+    }
+    .line-down{
+        animation-duration: 100ms;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
     }
 }
 

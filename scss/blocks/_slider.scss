@@ -1,5 +1,5 @@
 .slider{
-    min-height: 850px;
+    min-height: 900px;
     width: 100%;
     background: #272727;
     margin-top: -1px;
@@ -11,6 +11,9 @@
                 -ms-transition: 1s;
                 -o-transition: 1s;
                 transition: 1s;
+            &_1{
+                display: flex;
+            }
     }
     &__container{
         padding-top: 250px;
@@ -49,6 +52,9 @@
         font-weight:200;
         color: #B3B2AD;
         height: 85px;
+        &_marketing{
+            height: 115px;
+        }
     }
     &__link{
         font-family: Montserrat;
@@ -113,6 +119,16 @@
             }
         }
     }
+    &__picture{
+        width: 550px;
+        height: 530px;
+        animation-duration: 1000ms;
+                -webkit-transition: 1s;
+                -moz-transition: 1s;
+                -ms-transition: 1s;
+                -o-transition: 1s;
+                transition: 1s;
+    }
     // &__slider{
     //     // padding-left: 35px;
     // }
@@ -133,14 +149,23 @@
             -o-transition: 1s;
             transition: 1s;
         &_m{
-            padding-right: 235px;
+            padding-right: 265px;
+            padding-top: 55px;
         }
         &_w{
             padding-right: 240px;
         }
         &_d{
-            padding-right: 265px;
+            padding-right: 245px;
+            // padding-top: 25px;
+            margin-top: 45px;
         }
+        &_p{
+            padding-top: 55px;
+            padding-right: 150px;
+        }
+        // 55
+        // 225
     }
     &__portfolio{
         color: #FCFBF7;
@@ -168,6 +193,30 @@
         background: #C4C4C4;
         width: 45%;
         height: 306px;
+        &_one{
+            background: url('../../img/slider/brandIdentity-phones.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position-x: 80px;
+        }
+        &_two{
+            background: url('../../img/slider/brandIdentity-polina.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position-x: 0px;
+            background-position-y: -75px;
+        }
+        &_three{
+            background: url('../../img/slider/brandIndentity-coffee.png');
+            background-size: cover;
+            width: 100%;
+            height: 289px;
+        }
+        &_coffee{
+            background: url('../../img/slider/websites-coffee');
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
     }
 }
 
@@ -269,6 +318,67 @@
                 transition: 1s;
 }
 
+.margin_top_15{
+    margin-top: 15px;
+    animation-duration: 1000ms;
+                -webkit-transition: 1s;
+                -moz-transition: 1s;
+                -ms-transition: 1s;
+                -o-transition: 1s;
+                transition: 1s;
+}
+
+.padding_top_0{
+    padding-top: 0px;
+    animation-duration: 1000ms;
+                -webkit-transition: 1s;
+                -moz-transition: 1s;
+                -ms-transition: 1s;
+                -o-transition: 1s;
+                transition: 1s;
+}
+
+.hieght_width_20{
+    // width: 20%;
+    // height: 20%;
+    animation-duration: 2000ms;
+                -webkit-transition: 2s;
+                -moz-transition: 2s;
+                -ms-transition: 2s;
+                -o-transition: 2s;
+                transition: 2s;
+}
+
+.top_915{
+    top: 915px;
+    animation-duration: 2000ms;
+                -webkit-transition: 2s;
+                -moz-transition: 2s;
+                -ms-transition: 2s;
+                -o-transition: 2s;
+                transition: 2s;
+}
+
+.fz_24{
+    font-size: 24px !important;
+    animation-duration: 2000ms;
+                -webkit-transition: 2s;
+                -moz-transition: 2s;
+                -ms-transition: 2s;
+                -o-transition: 2s;
+                transition: 2s;
+}
+
+.fz_18{
+    font-size: 18px !important;
+    animation-duration: 2000ms;
+                -webkit-transition: 2s;
+                -moz-transition: 2s;
+                -ms-transition: 2s;
+                -o-transition: 2s;
+                transition: 2s;
+}
+
 @media (max-width: 992px){
     .slider{
         min-height: 715px;
@@ -287,6 +397,12 @@
             font-size: 19px;
             line-height: 25px;
             width: 400px;
+            &_marketing{
+                height: 155px !important;
+            }
+            &_production{
+                height: 155px !important;
+            }
         }
         &__next{
             &-label{
@@ -298,6 +414,34 @@
                 display: none;
             }
         }
+        &__picture{
+            display: none !important;
+            &s{
+                flex-direction: column;
+                height: 635px;
+                margin-top: 5%;
+                // margin-left: 5%;
+                width: 100%;
+            }
+        }
+
+        &__portfolio{
+            font-size: 18px;
+        }
+        &__pic{
+            width: 300px;
+            &_one{
+                background-position-x: 0;
+            }
+            &_two{
+                background-position-x: -30px;
+                background-position-y: -25px;
+            }
+            &_three{
+                display: none;
+            }
+        }
+
     }
 }
 

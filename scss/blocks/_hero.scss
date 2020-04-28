@@ -109,8 +109,9 @@
 
 @media (max-width: 992px){
     .hero{
+        padding-top: 45px;
         margin-top: 15px;
-        border-top: 1px solid #B3B2AD;
+        // border-top: 1px solid #B3B2AD;
         &__container{
             flex-direction: column;
             min-height: 545px;

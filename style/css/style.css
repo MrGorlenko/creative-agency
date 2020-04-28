@@ -462,8 +462,33 @@ template {
   .logo-desctop {
     display: none;
   }
-  .menu {
-    display: none;
+  .header {
+    z-index: 900;
+    margin-top: -15px;
+    padding-top: 15px;
+    height: 34px;
+    border-bottom: 1px solid #B3B2AD;
+    position: fixed !important;
+    width: 100%;
+    background: white;
+  }
+  .header__menu {
+    -webkit-animation-duration: 200ms;
+            animation-duration: 200ms;
+    -webkit-transition: 2s;
+    transition: 2s;
+  }
+  .line-up {
+    -webkit-animation-duration: 100ms;
+            animation-duration: 100ms;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  .line-down {
+    -webkit-animation-duration: 100ms;
+            animation-duration: 100ms;
+    -webkit-transition: 1s;
+    transition: 1s;
   }
 }
 
@@ -592,8 +617,8 @@ template {
 
 @media (max-width: 992px) {
   .hero {
+    padding-top: 45px;
     margin-top: 15px;
-    border-top: 1px solid #B3B2AD;
   }
   .hero__container {
     -webkit-box-orient: vertical;
@@ -727,7 +752,7 @@ template {
 .about__header {
   z-index: 3;
   position: fixed !important;
-  top: 3%;
+  top: 4% !important;
   width: 100%;
 }
 
@@ -911,7 +936,7 @@ template {
 }
 
 .slider {
-  min-height: 850px;
+  min-height: 900px;
   width: 100%;
   background: #272727;
   margin-top: -1px;
@@ -923,6 +948,12 @@ template {
           animation-duration: 1000ms;
   -webkit-transition: 1s;
   transition: 1s;
+}
+
+.slider__content_1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .slider__container {
@@ -960,6 +991,10 @@ template {
   font-weight: 200;
   color: #B3B2AD;
   height: 85px;
+}
+
+.slider__paragraph_marketing {
+  height: 115px;
 }
 
 .slider__link {
@@ -1030,6 +1065,15 @@ template {
   content: url("../../img/slider/list-marker.svg");
 }
 
+.slider__picture {
+  width: 550px;
+  height: 530px;
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
 .slider__next-label {
   text-align: end;
   padding-right: 250px;
@@ -1046,7 +1090,8 @@ template {
 }
 
 .slider__next-label_m {
-  padding-right: 235px;
+  padding-right: 265px;
+  padding-top: 55px;
 }
 
 .slider__next-label_w {
@@ -1054,7 +1099,13 @@ template {
 }
 
 .slider__next-label_d {
-  padding-right: 265px;
+  padding-right: 245px;
+  margin-top: 45px;
+}
+
+.slider__next-label_p {
+  padding-top: 55px;
+  padding-right: 150px;
 }
 
 .slider__portfolio {
@@ -1088,6 +1139,34 @@ template {
   background: #C4C4C4;
   width: 45%;
   height: 306px;
+}
+
+.slider__pic_one {
+  background: url("../../img/slider/brandIdentity-phones.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: 80px;
+}
+
+.slider__pic_two {
+  background: url("../../img/slider/brandIdentity-polina.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: 0px;
+  background-position-y: -75px;
+}
+
+.slider__pic_three {
+  background: url("../../img/slider/brandIndentity-coffee.png");
+  background-size: cover;
+  width: 100%;
+  height: 289px;
+}
+
+.slider__pic_coffee {
+  background: url("../../img/slider/websites-coffee");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .text_none {
@@ -1166,6 +1245,53 @@ template {
   transition: 1s;
 }
 
+.margin_top_15 {
+  margin-top: 15px;
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.padding_top_0 {
+  padding-top: 0px;
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.hieght_width_20 {
+  -webkit-animation-duration: 2000ms;
+          animation-duration: 2000ms;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.top_915 {
+  top: 915px;
+  -webkit-animation-duration: 2000ms;
+          animation-duration: 2000ms;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.fz_24 {
+  font-size: 24px !important;
+  -webkit-animation-duration: 2000ms;
+          animation-duration: 2000ms;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.fz_18 {
+  font-size: 18px !important;
+  -webkit-animation-duration: 2000ms;
+          animation-duration: 2000ms;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
 @media (max-width: 992px) {
   .slider {
     min-height: 715px;
@@ -1185,10 +1311,44 @@ template {
     line-height: 25px;
     width: 400px;
   }
+  .slider__paragraph_marketing {
+    height: 155px !important;
+  }
+  .slider__paragraph_production {
+    height: 155px !important;
+  }
   .slider__next-label {
     display: none;
   }
   .slider__line_white {
+    display: none;
+  }
+  .slider__picture {
+    display: none !important;
+  }
+  .slider__pictures {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 635px;
+    margin-top: 5%;
+    width: 100%;
+  }
+  .slider__portfolio {
+    font-size: 18px;
+  }
+  .slider__pic {
+    width: 300px;
+  }
+  .slider__pic_one {
+    background-position-x: 0;
+  }
+  .slider__pic_two {
+    background-position-x: -30px;
+    background-position-y: -25px;
+  }
+  .slider__pic_three {
     display: none;
   }
 }

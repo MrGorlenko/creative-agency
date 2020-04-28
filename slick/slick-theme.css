@@ -211,9 +211,12 @@
 
 @media (max-width: 992px){
     .slick-dots{
-        flex-direction: column;
-        width: 3%;
+        /* flex-direction: column; */
+        bottom: -25px !important;
+        width: 100%;
         right: 30px;
         bottom: 200px;
+        justify-content: center !important;
+    
     }
 }
