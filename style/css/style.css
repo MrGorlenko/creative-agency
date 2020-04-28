@@ -1405,7 +1405,8 @@ template {
 
 .reason {
   padding-bottom: 90px;
-  position: relative;
+  position: relative !important;
+  top: 0 !important;
 }
 
 .reason__logo {
@@ -1423,6 +1424,7 @@ template {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-top: 130px;
+  overflow: hidden;
 }
 
 .reason__title {
