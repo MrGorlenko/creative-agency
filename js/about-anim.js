@@ -259,7 +259,8 @@ gsap.from(".eight-r", {
         })
       
         scrollorama_text.animate('.about__block', {
-          duration: 600, property: 'left', start: -1000 + 'px' , end: 0, baseline: "bottom"
+          delay: -250,
+          duration: 800, property: 'left', start: -800 + 'px' , end: 0, baseline: "bottom"
         })
       
         scrollorama_text.animate('.about__block_r', {
@@ -269,10 +270,27 @@ gsap.from(".eight-r", {
         })
       
         scrollorama_text.animate('.about__block_r', {
-          delay: -100,
-          duration: 700, property: 'left', start: -500 + 'px' , end: 0
-          //  baseline: "bottom"
+          delay: 50,
+          duration: 800, 
+          // property: 'transform', start: 'matrix(1, 0, 0, 1, 500, 0)', end: 'matrix(1, 0, 0, 1, 20, 0)', 
+          // baseline: 'bottom'
+          property: 'right', start: -450 + 'px' , end: 0,
+           baseline: "bottom"
         })
+
+        // $('.hero').on('wheel', function(){
+        //   $('.about__block_r').addClass('display-none');
+        // })
+
+        // $('.about__container_labels').on('wheel', function(){
+        //   $('.about__block_r').removeClass('display-none');
+        // })
+
+        // $('.slider').on('wheel', function(){
+        //   $('.about__block_r').addClass('display-none');
+        // })
+        // transform: matrix(1, 0, 0, 1, 500, 0); - справа 
+        // matrix(1, 0, 0, 1, 20, 0); - центра
 
     }
   }

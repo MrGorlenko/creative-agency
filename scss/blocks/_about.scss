@@ -18,6 +18,7 @@
             display: flex;
             justify-content: space-between;
             width: 90%;   
+            overflow: hidden;
         }
     }
     &__push{
@@ -58,6 +59,7 @@
             align-items: flex-start;
             top: 150px;
             margin-top: 600px;
+            // position: relative;
         }
     }
     &__line{
@@ -120,6 +122,10 @@
     }
 }
 
+.display-none{
+    display: none !important;
+}
+
 @media (max-width: 1100px){
     .about{
         &__line{
@@ -151,8 +157,9 @@
             margin-top: 50px;
             min-height: 250px;
             &_r{
+                top: 0;
                 min-height: 250px;
-                margin-top: 220px;
+                margin-top: 240px;
                 align-items: center;
                 display: flex;
                 flex-direction: column;
@@ -166,6 +173,10 @@
             text-align: center;
             margin: auto;
             font-size: 36px;
+            &_r{
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
         }
     }
 }

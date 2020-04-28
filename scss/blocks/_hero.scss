@@ -1,6 +1,7 @@
 
 
 .hero{
+    overflow: hidden;
     margin-top: 115px;
     min-height: 80vh;
     &__container{
@@ -130,10 +131,13 @@
     }
 
     .triangle-up{
+        // position: absolute;
+        // top: 0;
         border-left: 62px solid transparent;
         border-right: 62px solid transparent;
         border-bottom: 125px solid black;
         // z-index: -4;
+
     }
     
     .triangle-down{
