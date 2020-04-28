@@ -23,7 +23,10 @@
     line-height: 0;
 
     position: absolute;
-    top: 50%;
+    /* top: 50%; */
+    right: 35px;
+    bottom: -35px;
+
 
     display: block;
 
@@ -97,20 +100,22 @@
 
 .slick-next
 {
-    right: -25px;
+    /* right: -25px; */
 }
 [dir='rtl'] .slick-next
 {
     right: auto;
-    left: -25px;
+    /* left: -25px; */
 }
 .slick-next:before
 {
-    content: '→';
+    /* content: '→'; */
+    content: url('../img/slider/arrow.svg');
 }
 [dir='rtl'] .slick-next:before
 {
-    content: '←';
+    /* content: '←'; */
+    content: url('../img/slider/arrow.svg');
 }
 
 /* Dots */
