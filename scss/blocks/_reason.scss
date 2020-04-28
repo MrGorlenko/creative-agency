@@ -44,65 +44,108 @@
         background-position: center;
         background-repeat: no-repeat;
         &_1{
-            background: url('../../img/reasons/logo1.png');
+            
+            background: url('../../img/reasons/logo-netologia.svg');
             background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
         }
         &_2{
-            background: url('../../img/reasons/logo2.png');
+            
+            background: url('../../img/reasons/logo-mailru.svg');
             background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
         }
         &_3{
-            background: url('../../img/reasons/logo3.png');
+            background: url('../../img/reasons/logo-bk.svg');
             background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
         }
         &_4{
-            background: url('../../img/reasons/logo4.png');
+            background: url('../../img/reasons/logo-cinemood.png');
             background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
         }
         &_5{
-            background: url('../../img/reasons/logo5.png');
+            background: url('../../img/reasons/logo-lamoda.svg');
             background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
         }
         &_6{
-            background: url('../../img/reasons/logo6.png');
+            background: url('../../img/reasons/logo-estee-laude.svg');
             background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
         }
         &_7{
-            background: url('../../img/reasons/logo7.png');
+            background: url('../../img/reasons/logo-starbucks.svg');
             background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
         }
         &_8{
-            background: url('../../img/reasons/logo8.png');
+            background: url('../../img/reasons/logo-voltswagen.png');
             background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
         }
         &_9{
-            background: url('../../img/reasons/logo9.png');
+            background: url('../../img/reasons/logo-urban.svg');
             background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
         }
-        // &_10{
-        //     background: url('../../img/reasons/logo10.png');
-        // }
-        // &_11{
-        //     background: url('../../img/reasons/logo11.png');
-        // }
+        &_10{
+            background: url('../../img/reasons/logo-sib-mol.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+           
+        }
+        &_11{
+            background: url('../../img/reasons/logo-jardin.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        &_12{
+            background: url('../../img/reasons/logo-ipsa.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        &_13{
+            background: url('../../img/reasons/logo-inter.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        &_14{
+            background: url('../../img/reasons/logo-park.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        &_15{
+            background: url('../../img/reasons/logo-ipls.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        &_16{
+            background: url('../../img/reasons/logo_exhibitions.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
     }
 }
 
@@ -191,6 +234,7 @@
             height: 63px;
             margin: auto;
             width: 310px;
+            margin-top: 35px;
         }
     }
 }
