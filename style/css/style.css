@@ -337,6 +337,10 @@ template {
   display: none;
 }
 
+* {
+  outline: none;
+}
+
 .container {
   width: 80%;
   margin: auto;
@@ -1091,6 +1095,15 @@ template {
   background-repeat: no-repeat;
 }
 
+.slider__pic_video {
+  background: none;
+}
+
+.slider__video {
+  width: 100%;
+  height: 100%;
+}
+
 .text_none {
   opacity: 0;
   animation-fill-mode: forwards;
@@ -1245,6 +1258,9 @@ template {
   .slider__pic_three {
     display: none;
   }
+  .slider__pic_desc {
+    display: none;
+  }
 }
 
 @media (max-width: 576px) {
@@ -1269,6 +1285,9 @@ template {
     width: 260px;
     font-size: 16px;
     line-height: 22px;
+  }
+  .slider__pic_video {
+    height: 185px;
   }
 }
 
@@ -1707,6 +1726,164 @@ template {
   }
   .form__input_message {
     width: 95%;
+  }
+}
+
+.our-team {
+  background: #272727;
+  width: 100%;
+  height: 100vh;
+  padding-top: 8%;
+}
+
+.our-team__logo {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+  color: #B3B2AD;
+  position: absolute;
+  top: 5%;
+}
+
+.our-team__container {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  justify-content: space-between;
+  margin-bottom: 4%;
+}
+
+.our-team__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.our-team__photo {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: grey;
+}
+
+.our-team__name {
+  font-family: Anglecia Pro Title;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 28px;
+  color: #FCFBF7;
+}
+
+.our-team__position {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #FCFBF7;
+}
+
+.our-team__about {
+  width: 266px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #B3B2AD;
+}
+
+.our-team__line {
+  width: 75%;
+  margin: auto;
+}
+
+.our-team__container2 {
+  display: flex;
+  width: 60%;
+  margin: auto;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.our-team__item2 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #B3B2AD;
+}
+
+@media (max-width: 992px) {
+  .our-team {
+    height: 100%;
+  }
+  .our-team__container {
+    flex-direction: column;
+    width: 95%;
+  }
+  .our-team__item {
+    position: relative;
+  }
+  .our-team__photo {
+    width: 80px;
+    height: 80px;
+  }
+  .our-team__about {
+    text-align: start;
+    font-size: 14px;
+  }
+  .our-team__container2 {
+    flex-wrap: wrap;
+    height: 100px;
+    margin-top: 0;
+  }
+  .our-team__container2_top {
+    margin-top: 35px;
+  }
+  .our-team__item2 {
+    width: 50%;
+    font-size: 14px;
+  }
+  .our-team__item2_desc {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .our-team {
+    padding-top: 25%;
+  }
+  .our-team__logo {
+    font-size: 18px;
+  }
+  .our-team__item {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .our-team__name {
+    position: absolute;
+    top: 4%;
+    left: 30%;
+    font-size: 20px;
+  }
+  .our-team__position {
+    position: absolute;
+    top: 25%;
+    left: 30%;
+    font-size: 14px;
+  }
+  .our-team__about {
+    width: 100%;
+  }
+  .our-team__container2 {
+    width: 90%;
   }
 }
 /*# sourceMappingURL=style.css.map */
