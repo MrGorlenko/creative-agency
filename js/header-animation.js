@@ -5,15 +5,17 @@ $(document).ready(function() {
         blocks: '.about__header'
     });
 
-    // var scrollHeader = $.scrollorama({
-    //     blocks: '.reason'
-    // });
+    var scrollHeaderReason = $.scrollorama({
+        blocks: '.reason__header'
+    });
 
-    // scrollHeader.animate('.header', {
-    //     duration: 300, property: 'top', start: 0, end: -40 + 'px', baseline: 'top'
-    // })
+    
+    scrollHeaderReason.animate('.header', {
+        delay: 2000,
+        duration: 300, property: 'margin-top', start: -15 + 'px', end: -65 + 'px', baseline: 'top'
+     })
 
-
+    // margin-top: -70px;
 
     function myFunctionCircle(z) {
         if (z.matches) { 

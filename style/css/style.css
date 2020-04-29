@@ -1424,7 +1424,6 @@ template {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-top: 130px;
-  overflow: hidden;
 }
 
 .reason__title {
@@ -1588,7 +1587,19 @@ template {
   }
 }
 
+@media (min-width: 993px) {
+  .reason__header {
+    display: none;
+  }
+}
+
 @media (max-width: 992px) {
+  .reason__header {
+    position: fixed !important;
+    top: 0 !important;
+    width: 100%;
+    z-index: 500;
+  }
   .reason__logo {
     display: none;
   }
@@ -1599,6 +1610,7 @@ template {
         -ms-flex-direction: column;
             flex-direction: column;
     height: 700px;
+    overflow: hidden;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
