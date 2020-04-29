@@ -795,12 +795,12 @@ template {
   margin-bottom: 30px;
   text-align: end;
   color: #FCFBF7;
-  padding-right: 9px;
+  padding-right: 11px;
 }
 
 .about__title_r {
   text-align: start;
-  padding-left: 9px;
+  padding-left: 11px;
   padding-right: 0;
 }
 
