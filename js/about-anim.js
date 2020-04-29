@@ -214,23 +214,26 @@ gsap.from(".eight-r", {
       duration:200, property:'height', start:7 +'em', end: 30 + 'em', baseline: "bottom"}
       )
     scrollorama.animate('#aboutScroll',{
+      delay:100,
       duration:500, property:'margin-top', start:-60 +'px', end: -255 + 'px', baseline: "bottom"}
       )
-      // scrollorama_text.animate('.about__block', {
-      //   delay:100,
-      //   duration: 1200, property: 'opacity', start: 0 , end: 1, baseline: "top"
-      // })
+    
     
       scrollorama_text.animate('.about__block', {
         delay:300,
         duration: 400, property: 'left', start: -300 + 'px' , end: 0, baseline: "bottom"
       })
+
+      scrollorama_text.animate('.about__block', {
+        delay:300,
+        duration: 400, property: 'opacity', start: 0 , end: 1, baseline: "bottom"
+      })
     
-      // scrollorama_text.animate('.about__block_r', {
-      //   // delay: -530,
-      //   duration: 600, property: 'opacity', start: 0 , end: 1, 
-      //    baseline: "top"
-      // })
+      scrollorama_text.animate('.about__block_r', {
+        // delay: -530,
+        duration: 300, property: 'opacity', start: 0 , end: 1, 
+         baseline: "top"
+      })
     
       scrollorama_text.animate('.about__block_r', {
         // delay: -530,
