@@ -94,8 +94,11 @@
         margin-bottom: 30px;
         text-align: end;
         color: #FCFBF7;
+        padding-right: 7px;
         &_r{
             text-align: start;
+            padding-left: 7px;
+            padding-right: 0;
         }
     }
     &__link{

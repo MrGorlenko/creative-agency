@@ -795,10 +795,13 @@ template {
   margin-bottom: 30px;
   text-align: end;
   color: #FCFBF7;
+  padding-right: 7px;
 }
 
 .about__title_r {
   text-align: start;
+  padding-left: 7px;
+  padding-right: 0;
 }
 
 .about__link {
