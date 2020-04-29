@@ -22,7 +22,8 @@ $(document).ready(function() {
         
 
             scrollHeader.animate('.about-header__container', {
-                duration: 1900, property:'opacity', start:0 , end:1, basline: 'bottom'
+                delay: 200,
+                duration: 1050, property:'opacity', start:0 , end:1, basline: 'bottom'
             })
         
         

@@ -216,6 +216,39 @@
         &_video{
             background: none;
         }
+        &_black{
+            position: relative;
+            animation-duration: 3000ms;
+                -webkit-transition: 3s;
+                -moz-transition: 3s;
+                -ms-transition: 3s;
+                -o-transition: 3s;
+                transition: 3s;
+                background: rgba($color: #000000, $alpha: .3);
+                // z-index: 5000;
+
+            &::after{
+                animation-duration: 3000ms;
+                -webkit-transition: 3s;
+                -moz-transition: 3s;
+                -ms-transition: 3s;
+                -o-transition: 3s;
+                transition: 3s;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            content: '';
+            display: block;
+            background: rgba($color: #000000, $alpha: .3);
+            }
+        }
+        &_bk{
+            background: url('../../img/slider/websites-coffee');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
         
     }
 
@@ -446,6 +479,7 @@
             font-size: 18px;
         }
         &__pic{
+            position: relative;
             width: 300px;
             &_one{
                 background-position-x: 0;
@@ -460,6 +494,7 @@
             &_desc{
                 display: none;
             }
+        
         }
 
     }

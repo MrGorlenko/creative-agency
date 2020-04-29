@@ -129,7 +129,16 @@
         $(".slider__next-label_d").removeClass('margin_top_15');
         $(".slider__next-label_p").removeClass('padding_top_0');
         $(".slider__next-label_m").removeClass('padding_top_0');
+
+        
         // hieght_width_20
+        })
+
+        $("#marketing-bk").mouseover(function(){
+          $(this).addClass('slider__pic_black');
+        })
+        $("#marketing-bk").mouseout(function(){
+          $(this).removeClass('slider__pic_black');
         })
 
       } else {
