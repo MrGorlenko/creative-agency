@@ -5,9 +5,9 @@ $(document).ready(function() {
         blocks: '.about__header'
     });
 
-    var scrollHeader = $.scrollorama({
-        blocks: '.reason'
-    });
+    // var scrollHeader = $.scrollorama({
+    //     blocks: '.reason'
+    // });
 
     // scrollHeader.animate('.header', {
     //     duration: 300, property: 'top', start: 0, end: -40 + 'px', baseline: 'top'
