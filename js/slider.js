@@ -84,7 +84,7 @@
             }
     })
 
-    $('.global-menu').on('click', function(event){
+    $('#cases-link').on('click', function(event){
       setTimeout(function () {
         $(".global-menu").removeClass('global-menu_active');
     }, 1200);
@@ -376,7 +376,7 @@
             }
     })
 
-    $('.global-menu').on('click', function(event){
+    $('#cases-link').on('click', function(event){
       setTimeout(function () {
         $(".global-menu").removeClass('global-menu_active');
     }, 1200);
