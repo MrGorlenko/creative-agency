@@ -903,6 +903,7 @@ template {
   width: 100%;
   background: #272727;
   margin-top: -1px;
+  padding-bottom: 30px;
 }
 
 .slider__content {
@@ -2017,6 +2018,10 @@ template {
   width: 30px !important;
   animation-duration: 100ms;
   transition: 1s;
+}
+
+#upper-menu {
+  z-index: 100000;
 }
 
 @media (max-width: 576px) {
