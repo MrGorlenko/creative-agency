@@ -17,12 +17,17 @@
         <div class="container header__container">
             <div class="header__icon"><img class="logo-desctop" src="img/header/Vector.svg" alt=""> <img class="logo-desctop" src="img/header/green.png" alt=""> 
             <img src="img/header/logo-mobile.svg" alt="" class="logo-mobile"></div>
-            <div class="header__menu">
+            <div class="header__menu header__menu_passive" id="upper-menu">
                 <div class="menu">Menu</div>
                 <span class="line-up"></span>
                 <span class="line-down"></span>
             </div>
         </div>
+    </div>
+    <div class="global-menu">
+        <a href="our-team.html" class="global-menu__link">Team</a>
+        <a href="#" class="global-menu__link">Cases</a>
+        <a href="#" class="global-menu__link">Contacts</a>
     </div>
 
     <section class="hero">
@@ -51,7 +56,7 @@
             <div class="header__container about-header__container">
                 <div class="header__icon"><img class="logo-desctop" src="img/header/logo-white.png" alt="">
                     <img src="img/header/logo-mobile.png" alt="" class="logo-mobile"></div>
-                    <div class="header__menu header__menu_white">
+                    <div class="header__menu header__menu_white header__menu_white_ex" id="middle-menu">
                         <div class="menu menu_white">Menu</div>
                         <span class="line-up"></span>
                         <span class="line-down"></span>
@@ -136,7 +141,9 @@
                     <li>SMM</li>
                     </ul>
                     <div class="slider__pictures text_none">
-                        <div id="marketing-bk" class="slider__pic slider__pic_bk "></div>
+                        <div id="marketing-bk" class="slider__pic slider__pic_bk "> 
+                            <!-- <span class="slider__pic-leabel">blablabla</span>  -->
+                        </div>
                         <div class="slider__pic slider__pic_black"></div>
                         <div class="slider__pic slider__pic_black slider__pic_desc"></div>
                         <div class="slider__pic slider__pic_black slider__pic_desc"></div>
@@ -308,7 +315,8 @@
     <script src="js/jquery.scrollorama.js"></script>
     <script src="js/about-anim.js"></script>
     <script src="slick/slick.min.js"></script>
-    
+    <script src='js/menu.js'></script>
+    <script src='js/menu-close.js'></script>
     <script src="js/slider.js"></script>
     <script>
         new WOW().init();

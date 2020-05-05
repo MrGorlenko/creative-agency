@@ -362,6 +362,7 @@ template {
 .header {
   position: relative !important;
   padding-top: 3%;
+  z-index: 9004;
 }
 
 .header__container {
@@ -380,6 +381,10 @@ template {
   margin-left: 2px;
 }
 
+.header__menu {
+  cursor: pointer;
+}
+
 .header__menu_white span {
   cursor: pointer;
   border: 1px solid #FCFBF7 !important;
@@ -391,18 +396,23 @@ template {
   margin-top: 16%;
   display: block;
   width: 30px;
-  height: 0px;
+  height: 1px;
   color: black;
   left: 1290px;
+  background-color: #272727;
   top: 89px;
   content: '';
   font-size: 14px;
   border: 1px solid #272727;
+  animation-duration: 100ms;
+  transition: 1s;
 }
 
 .header__menu span:last-child {
   width: 18px;
   margin-top: 20%;
+  animation-duration: 100ms;
+  transition: 1s;
 }
 
 .menu {
@@ -447,7 +457,7 @@ template {
     display: none;
   }
   .header {
-    z-index: 900;
+    z-index: 9003;
     margin-top: -15px;
     padding-top: 15px;
     height: 34px;
@@ -717,7 +727,7 @@ template {
 }
 
 .about__header {
-  z-index: 3;
+  z-index: 9003;
   position: fixed !important;
   top: 4% !important;
   width: 100%;
@@ -1104,6 +1114,9 @@ template {
   animation-duration: 3000ms;
   transition: 3s;
   background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .slider__pic_black::after {
@@ -1911,6 +1924,106 @@ template {
   }
   .our-team__container2 {
     width: 90%;
+  }
+}
+
+.global-menu {
+  min-height: 100vh;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9000;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.global-menu__link {
+  font-family: Anglecia Pro Title;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+  color: #272727;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  width: 320px;
+  text-decoration: none;
+  height: 35px;
+  border-bottom: 1px solid #272727;
+  opacity: 0;
+}
+
+.global-menu__link:last-child {
+  border-bottom: none;
+}
+
+.global-menu_active {
+  display: flex;
+  animation-duration: 200ms;
+  transition: 2s;
+}
+
+.global-menu_bg {
+  background-color: rgba(252, 251, 247, 0.95);
+  animation-duration: 200ms;
+  transition: 2s;
+}
+
+.global-menu_bg_black {
+  background-color: rgba(39, 39, 39, 0.95);
+  animation-duration: 200ms;
+  transition: 2s;
+}
+
+.global-menu_bg-none {
+  background-color: rgba(255, 255, 255, 0);
+  animation-duration: 50ms;
+  transition: .5s;
+}
+
+.global-menu_opacity {
+  opacity: 1;
+  animation-duration: 200ms;
+  transition: 2s;
+}
+
+.global-menu_opacity_black {
+  color: #FCFBF7;
+  opacity: 1;
+  animation-duration: 200ms;
+  transition: 2s;
+  border-bottom: 1px solid #FCFBF7;
+}
+
+.global-menu_opacity-none {
+  opacity: 0;
+  animation-duration: 50ms;
+  transition: .5s;
+}
+
+.global-menu_span-up {
+  margin-top: 10px !important;
+  transform: rotate(0.1turn);
+  animation-duration: 100ms;
+  transition: 1s;
+}
+
+.global-menu_span-down {
+  margin-top: -1px !important;
+  transform: rotate(-0.1turn);
+  width: 30px !important;
+  animation-duration: 100ms;
+  transition: 1s;
+}
+
+@media (max-width: 576px) {
+  .global-menu__link {
+    font-size: 36px;
+    line-height: 36px;
+    width: 300px;
   }
 }
 /*# sourceMappingURL=style.css.map */

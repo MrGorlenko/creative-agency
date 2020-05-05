@@ -1,6 +1,7 @@
 .header{
     position: relative !important;
     padding-top: 3%;
+    z-index: 9004;
     &__container{
         display: flex;
         justify-content: space-between;
@@ -17,6 +18,7 @@
         }
     }
     &__menu{
+        cursor: pointer;
         &_white{
             span{
                 cursor: pointer;
@@ -33,16 +35,29 @@
             margin-top: 16%;
             display: block;
             width: 30px;
-            height: 0px;
+            height: 1px;
             color: black;
             left: 1290px;
+            background-color: #272727;;
             top: 89px;
             content: '';
             font-size: 14px;
             border: 1px solid #272727;
+            animation-duration: 100ms;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
             &:last-child{
                 width: 18px;
                 margin-top: 20%;
+                animation-duration: 100ms;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
             }
         }
     }
@@ -86,6 +101,8 @@
     transition: 1s;
 }
 
+
+
 @media (min-width: 993px){
     .logo-mobile{
         display: none;
@@ -98,7 +115,7 @@
     }
     .header{
         // display: none;
-        z-index: 900;
+        z-index: 9003;
         margin-top: -15px;
         padding-top: 15px;
         height: 34px;
