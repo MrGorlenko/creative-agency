@@ -390,6 +390,7 @@ template {
   border: 1px solid #FCFBF7 !important;
   animation-duration: 200ms;
   transition: 1s;
+  background-color: #FCFBF7 !important;
 }
 
 .header__menu span {
