@@ -8,6 +8,18 @@
         display: flex;
         align-items: center;
         margin-top: 18px;
+        font-family: Montserrat;
+        font-weight: 100;
+        outline: none;
+        color: #B3B2AD;
+        text-decoration: none;
+        cursor: pointer;
+        &:hover{
+            text-decoration: underline;
+        }
+        img{
+            margin-right: 10px;
+        }
         a{
             margin-left: 10px;
         }
