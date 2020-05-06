@@ -1,6 +1,7 @@
 .form{
     background: #272727;
-    height: 900px;
+    // height: 900px;
+    padding-bottom: 30px;
     &__logo{
         padding-top: 50px;
         width: 80%;
@@ -24,6 +25,7 @@
         justify-content: center;
         // align-items: center;
         flex-direction: column;
+        margin-bottom: 200px;
     }
     &__input{
         cursor: pointer;

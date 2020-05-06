@@ -1687,7 +1687,7 @@ template {
 
 .form {
   background: #272727;
-  height: 900px;
+  padding-bottom: 30px;
 }
 
 .form__logo {
@@ -1712,6 +1712,7 @@ template {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  margin-bottom: 200px;
 }
 
 .form__input {
@@ -2043,7 +2044,7 @@ template {
 }
 
 .global-menu_span-down {
-  margin-top: -1px !important;
+  margin-top: -3px !important;
   transform: rotate(-0.1turn);
   width: 30px !important;
   animation-duration: 100ms;
@@ -2060,5 +2061,23 @@ template {
     line-height: 36px;
     width: 300px;
   }
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 80%;
+  margin: auto;
+}
+
+.footer__link {
+  display: flex;
+  align-items: center;
+  margin-top: 18px;
+}
+
+.footer__link a {
+  margin-left: 10px;
 }
 /*# sourceMappingURL=style.css.map */
