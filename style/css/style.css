@@ -954,6 +954,7 @@ template {
 
 .slider__paragraph_marketing {
   height: 115px;
+  width: 637px;
 }
 
 .slider__link {
@@ -1788,6 +1789,17 @@ template {
   color: #B3B2AD;
   position: absolute;
   top: 5%;
+  right: 5%;
+}
+
+.our-team__back {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+}
+
+.our-team__arrow {
+  transform: rotate(180deg);
 }
 
 .our-team__container {
@@ -1919,9 +1931,15 @@ template {
   }
   .our-team__logo {
     font-size: 18px;
+    top: 2%;
   }
   .our-team__container {
     width: 310px;
+  }
+  .our-team__back {
+    position: absolute;
+    top: 2%;
+    left: 5%;
   }
   .our-team__item {
     flex-direction: row;

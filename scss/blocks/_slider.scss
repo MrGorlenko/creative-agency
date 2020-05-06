@@ -44,8 +44,6 @@
     }
     &__paragraph{
         font-family: Montserrat;
-        // font-style: normal;
-        // font-weight: normal;
         font-size: 24px;
         line-height: 29px;
         width: 643px;
@@ -55,6 +53,7 @@
         height: 85px;
         &_marketing{
             height: 115px;
+            width: 637px;
         }
     }
     &__link{
