@@ -147,14 +147,15 @@
         &_m{
             padding-right: 265px;
             padding-top: 55px;
+            margin-top: 70px;
         }
         &_w{
             padding-right: 240px;
+            margin-top: 70px;
         }
         &_d{
             padding-right: 245px;
-            // padding-top: 25px;
-            margin-top: 45px;
+            margin-top: 70px;
         }
         &_p{
             padding-top: 55px;
@@ -500,6 +501,9 @@
         
         }
 
+    }
+    .line_down{
+        margin-top: -3px !important;
     }
 }
 

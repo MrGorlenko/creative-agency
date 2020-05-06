@@ -1038,15 +1038,17 @@ template {
 .slider__next-label_m {
   padding-right: 265px;
   padding-top: 55px;
+  margin-top: 70px;
 }
 
 .slider__next-label_w {
   padding-right: 240px;
+  margin-top: 70px;
 }
 
 .slider__next-label_d {
   padding-right: 245px;
-  margin-top: 45px;
+  margin-top: 70px;
 }
 
 .slider__next-label_p {
@@ -1303,6 +1305,9 @@ template {
   }
   .slider__pic_desc {
     display: none;
+  }
+  .line_down {
+    margin-top: -3px !important;
   }
 }
 
@@ -1790,6 +1795,7 @@ template {
   position: absolute;
   top: 5%;
   right: 5%;
+  transform: rotate(180deg);
 }
 
 .our-team__back {
