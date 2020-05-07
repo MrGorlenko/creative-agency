@@ -2,16 +2,6 @@ $(document).ready(function() {
   var scrollorama = $.scrollorama({
       blocks:'.about__push'
   });
-  // scrollorama.animate('#aboutScroll',{
-  //   duration:500, property:'width', start:14 +'em', end: 95*2 + 'em', baseline: "bottom"}
-  //   )
-  // scrollorama.animate('#aboutScroll',{
-  //   duration:200, property:'height', start:7 +'em', end: 30 + 'em', baseline: "bottom"}
-  //   )
-  // scrollorama.animate('#aboutScroll',{
-  //   duration:500, property:'margin-top', start:-60 +'px', end: -455 + 'px', baseline: "bottom"}
-  //   )
-
 
   
 
@@ -23,6 +13,7 @@ $(document).ready(function() {
   });
 
   scrollorama_line.animate('.about__down', {
+    delay: -500,
     duration: 500, property: 'min-height', start: 0 + 'px', end: 1280 + 'px', baseline: "top"
   })
 
@@ -30,25 +21,6 @@ $(document).ready(function() {
     blocks:'.about__container_labels'
   });
 
-  // scrollorama_text.animate('.about__block', {
-  //   duration: 400, property: 'opacity', start: 0 , end: 1, baseline: "top"
-  // })
-
-  // scrollorama_text.animate('.about__block', {
-  //   duration: 800, property: 'left', start: -1000 + 'px' , end: 0, baseline: "bottom"
-  // })
-
-  // scrollorama_text.animate('.about__block_r', {
-  //   // delay: -530,
-  //   duration: 600, property: 'opacity', start: 0 , end: 1, 
-  //    baseline: "top"
-  // })
-
-  // scrollorama_text.animate('.about__block_r', {
-  //   delay: -530,
-  //   duration: 1000, property: 'right', start: -100 + 'px' , end: 0
-  //   //  baseline: "bottom"
-  // })
 
 
   gsap.from(".first", {
@@ -277,25 +249,10 @@ gsap.from(".eight-r", {
         scrollorama_text.animate('.about__block_r', {
           delay: 50,
           duration: 800, 
-          // property: 'transform', start: 'matrix(1, 0, 0, 1, 500, 0)', end: 'matrix(1, 0, 0, 1, 20, 0)', 
-          // baseline: 'bottom'
           property: 'right', start: -450 + 'px' , end: 0,
            baseline: "bottom"
         })
 
-        // $('.hero').on('wheel', function(){
-        //   $('.about__block_r').addClass('display-none');
-        // })
-
-        // $('.about__container_labels').on('wheel', function(){
-        //   $('.about__block_r').removeClass('display-none');
-        // })
-
-        // $('.slider').on('wheel', function(){
-        //   $('.about__block_r').addClass('display-none');
-        // })
-        // transform: matrix(1, 0, 0, 1, 500, 0); - справа 
-        // matrix(1, 0, 0, 1, 20, 0); - центра
 
     }
   }

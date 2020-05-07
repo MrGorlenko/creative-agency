@@ -172,6 +172,7 @@
           sliderCollage.addClass('text_none');
           sliderCollage.addClass('hieght_width_20');
     
+          $(".slider__next-label_w").addClass('margin_top_15');
           $(".slider__next-label_d").addClass('margin_top_15');
           $(".slider__next-label_p").addClass('padding_top_0');
           $(".slider__next-label_m").addClass('padding_top_0');
@@ -252,6 +253,7 @@
         sliderCollage.removeClass('text_none');
         sliderCollage.removeClass('hieght_width_20');
     
+        $(".slider__next-label_w").removeClass('margin_top_15');
         $(".slider__next-label_d").removeClass('margin_top_15');
         $(".slider__next-label_p").removeClass('padding_top_0');
         $(".slider__next-label_m").removeClass('padding_top_0');
@@ -305,7 +307,7 @@
     
           sliderLineWhite.addClass('text_up_860');
     
-          slickDots.addClass('top_915');
+          slickDots.addClass('top_960');
     
           sliderCollage.addClass('text_none');
           sliderCollage.addClass('hieght_width_20');
@@ -350,11 +352,12 @@
         sliderContent.removeClass('height_900');
     
         sliderLineWhite.removeClass('text_up_860');
-        slickDots.removeClass('top_915');;
+        slickDots.removeClass('top_960');;
     
         sliderCollage.removeClass('text_none');
         sliderCollage.removeClass('hieght_width_20');
     
+        $(".slider__next-label_w").removeClass('margin_top_15');
         $(".slider__next-label_d").removeClass('margin_top_15');
         $(".slider__next-label_p").removeClass('padding_top_0');
         $(".slider__next-label_m").removeClass('padding_top_0');

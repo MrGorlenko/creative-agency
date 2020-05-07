@@ -147,11 +147,12 @@
         &_m{
             padding-right: 265px;
             padding-top: 55px;
-            margin-top: 70px;
+            // margin-top: 70px;
         }
         &_w{
             padding-right: 240px;
             margin-top: 70px;
+            // margin-top: 10px;
         }
         &_d{
             padding-right: 245px;
@@ -190,32 +191,119 @@
         background: #C4C4C4;
         width: 45%;
         height: 306px;
+        &_brand{
+            width: 40%;
+            height: 40%;
+        }
         &_one{
-            background: url('../../img/slider/brandIdentity-phones.png');
-            background-size: contain;
+            background: none;
+            background-image: url('../../img/slider/frame102.png');
+            background-size: cover;
             background-repeat: no-repeat;
             background-position-x: 80px;
+            background-position-y: -100px;
+            background-position-x: -20px;
         }
         &_two{
-            background: url('../../img/slider/brandIdentity-polina.png');
+            background: none;
+            background-image: url('../../img/slider/frame101.png');
             background-size: cover;
             background-repeat: no-repeat;
             background-position-x: 0px;
-            background-position-y: -75px;
+            // background-position-y: -75px;
+            // background-position-y: -60px;
         }
         &_three{
-            background: url('../../img/slider/brandIndentity-coffee.png');
+            background: none;
+            background-image: url('../../img/slider/frame103.png');
             background-size: cover;
-            width: 100%;
-            height: 289px;
+            background-position-y: -60px;
+            // width: 100%;
+            // height: 289px;
+        }
+        &_four{
+            background: none;
+            background-image: url('../../img/slider/frame104.png');
+            background-size: cover;
+            // width: 100%;
+            // height: 289px;
         }
         &_coffee{
             background: url('../../img/slider/websites-coffee');
             background-size: contain;
             background-repeat: no-repeat;
         }
+        &_ideas{
+            background: url('../../img/slider/ideasOnline.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
         &_video{
             background: none;
+        }
+        &_w30{
+            width: 30%;
+        }
+        &_mark1{
+            background: url('../../img/slider/mathc.jpg');
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        &_mark2{
+            background: url('../../img/slider/selection.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        &_mark3{
+            background: url('../../img/slider/cinemood.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        &_mark4{
+            background: url('../../img/slider/headstart.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        &_high{
+            height: 800px;
+            &_web{
+                background: url('../../img/slider/website-high.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+        }
+        &_mt{
+            margin-top: -410px;
+        }
+        &_36{
+            background: url('../../img/slider/website-36.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        &_blue{
+            background: url('../../img/slider/websites-blue.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        &_sel{
+            background: url('../../img/slider/selection.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        &_match{
+            background: url('../../img/slider/mathc.jpg');
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        &_bk{
+            background: none;
+            // height: 450px;
+            width: 100%;
+            background-size: 100%;
+            background-position-y: -100px;
+            background-image: url('../../img/slider/bk.png');
+            // background-size: cover;
+            background-repeat: no-repeat;
         }
         &_black{
             position: relative;
@@ -247,11 +335,6 @@
             display: block;
             background: rgba($color: #000000, $alpha: .3);
             }
-        }
-        &_bk{
-            background: url('../../img/slider/websites-coffee');
-            background-size: cover;
-            background-repeat: no-repeat;
         }
         
     }
@@ -293,6 +376,10 @@
                 -ms-transition: 1s;
                 -o-transition: 1s;
                 transition: 1s;
+
+        &_30{
+            top: -30px;
+        }
         &_340{
             // margin-top: -340px;
             position: absolute;
@@ -401,6 +488,16 @@
                 transition: 2s;
 }
 
+.top_960{
+    top: 960px;
+    animation-duration: 2000ms;
+                -webkit-transition: 2s;
+                -moz-transition: 2s;
+                -ms-transition: 2s;
+                -o-transition: 2s;
+                transition: 2s;
+}
+
 .top_92{
     top: 92%;
     animation-duration: 2000ms;
@@ -485,15 +582,9 @@
         &__pic{
             position: relative;
             width: 300px;
-            &_one{
-                background-position-x: 0;
-            }
-            &_two{
-                background-position-x: -30px;
-                background-position-y: -25px;
-            }
-            &_three{
-                display: none;
+            &_brand{
+                background-position-x: center;
+                background-position-y: center;
             }
             &_desc{
                 display: none;
@@ -507,11 +598,38 @@
     }
 }
 
+@media (max-width: 768px){
+    .slider{
+        &__pic{
+            &_non-mob{
+                display: none;
+            }
+            // &_high{
+            //     // width: 180px;
+            // }
+        }
+    }
+}
+
+@media (min-width: 576px){
+    .slider{
+        &__pic{
+            &_mobile1{
+                display: none;
+            }
+        }
+    }
+}
+
 @media (max-width: 576px){
     .slider{
-        min-height: 660px;
+        max-height: 945px;
         &__container{
             padding-top: 100px;
+        }
+        &__pictures{
+            height: 575px;
+            margin-top: 0;
         }
         &__content{
             margin-left: 4%;
@@ -519,6 +637,7 @@
         &__title{
             width: 300px;
             font-size: 36px;
+            margin-bottom: 0;
         }
         &__slider{
             padding-left: 0;
@@ -533,6 +652,34 @@
             &_video{
                 height: 185px;
             }
+            &_brand{
+                height: 48%;
+            }
+            &_high{
+                // height: 300px;
+                height: 265px;
+                width: 150px;
+            }
+            &_mobile1{
+                display: block;
+            }
+            &_mobile{
+                display: block;
+            }
+            &_36{
+                height: 48%;
+                background-size: cover;
+            }
+            &_blue{
+                height: 48%;
+                background-size: cover;
+            }
         }
+    }
+    .top_92{
+        top: 88%;
+    }
+    .top_960{
+        top: 870px
     }
 }
