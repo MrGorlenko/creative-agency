@@ -105,7 +105,7 @@
 
 .global-menu_span-up{
     margin-top: 10px !important;
-    transform: rotate(0.1turn);
+    transform: rotate(45deg);
     animation-duration: 100ms;
     -webkit-transition: 1s;
     -moz-transition: 1s;
@@ -116,9 +116,10 @@
 
 .global-menu_span-down{
     margin-top: -3px !important;
-    transform: rotate(-0.1turn);
+    transform: rotate(-45deg);
     width: 30px !important;
     animation-duration: 100ms;
+
     -webkit-transition: 1s;
     -moz-transition: 1s;
     -ms-transition: 1s;

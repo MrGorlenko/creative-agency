@@ -79,7 +79,8 @@
 
 .line_up{
     margin-top: 12px;
-    transform:rotate(0.1turn);
+    // transform:rotate(0.1turn);
+    transform: rotate(45deg);
     margin-top: 10px;
     animation-duration: 200ms;
     -webkit-transition: 1s;
@@ -90,10 +91,11 @@
     width: 32px;
 }
 .line_down{
-    transform: rotate(-0.1turn);
-    width: 32px !important;
+    // transform: rotate(-0.1turn);
+    transform: rotate(-45deg);
+    width: 30px !important;
     // margin-top: 10px;
-    margin-top: -2px !important;
+    margin-top: -3px !important;
     animation-duration: 200ms;
     -webkit-transition: 1s;
     -moz-transition: 1s;

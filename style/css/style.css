@@ -432,7 +432,7 @@ template {
 
 .line_up {
   margin-top: 12px;
-  transform: rotate(0.1turn);
+  transform: rotate(45deg);
   margin-top: 10px;
   animation-duration: 200ms;
   transition: 1s;
@@ -440,9 +440,9 @@ template {
 }
 
 .line_down {
-  transform: rotate(-0.1turn);
-  width: 32px !important;
-  margin-top: -2px !important;
+  transform: rotate(-45deg);
+  width: 30px !important;
+  margin-top: -3px !important;
   animation-duration: 200ms;
   transition: 1s;
 }
@@ -2066,14 +2066,14 @@ template {
 
 .global-menu_span-up {
   margin-top: 10px !important;
-  transform: rotate(0.1turn);
+  transform: rotate(45deg);
   animation-duration: 100ms;
   transition: 1s;
 }
 
 .global-menu_span-down {
   margin-top: -3px !important;
-  transform: rotate(-0.1turn);
+  transform: rotate(-45deg);
   width: 30px !important;
   animation-duration: 100ms;
   transition: 1s;
