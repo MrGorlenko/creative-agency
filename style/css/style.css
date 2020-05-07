@@ -720,6 +720,20 @@ template {
   font-style: italic;
 }
 
+@font-face {
+  font-family: 'Anglecia Pro Bold';
+  src: url("AngleciaProTitle-Bold.otf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AngleciaProTitle-BoldItalic';
+  src: url("AngleciaProTitle-BoldItalic.otf");
+  font-weight: bold;
+  font-style: italic;
+}
+
 .about {
   min-height: 1130px;
   width: 100%;
@@ -930,7 +944,7 @@ template {
 }
 
 .slider__title {
-  font-family: Anglecia Pro Tit;
+  font-family: AngleciaProTitle-BoldItalic;
   font-style: italic;
   font-weight: bold;
   font-size: 50px;
@@ -1512,7 +1526,7 @@ template {
 }
 
 .reason__title {
-  font-family: Anglecia Pro Tit;
+  font-family: AngleciaProTitle-BoldItalic;
   font-style: italic;
   font-weight: bold;
   font-size: 50px;
@@ -1718,7 +1732,7 @@ template {
 
 @media (max-width: 576px) {
   .reason__container {
-    height: 675px;
+    height: 715px;
   }
   .reason__container_ex {
     width: 95%;

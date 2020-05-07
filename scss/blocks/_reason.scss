@@ -16,7 +16,7 @@
         // overflow: hidden;
     }
     &__title{
-        font-family: Anglecia Pro Tit;
+        font-family: AngleciaProTitle-BoldItalic;
         font-style: italic;
         font-weight: bold;
         font-size: 50px;
@@ -221,7 +221,7 @@
 @media (max-width: 576px){
     .reason{
         &__container{
-            height: 675px;
+            height: 715px;
             &_ex{
                 width: 95%;
             }

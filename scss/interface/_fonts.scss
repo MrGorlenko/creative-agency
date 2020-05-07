@@ -70,3 +70,28 @@
     font-style: italic;
 }
 
+@font-face {
+    font-family: 'Anglecia Pro Bold';
+    src: url('AngleciaProTitle-Bold.otf');
+    // src: local('Anglecia Pro Title Italic'), local('AngleciaProTitle-Italic'),
+    //     url('AngleciaProTitle-Italic.eot?#iefix') format('embedded-opentype'),
+    //     url('AngleciaProTitle-Italic.woff2') format('woff2'),
+    //     url('AngleciaProTitle-Italic.woff') format('woff'),
+    //     url('AngleciaProTitle-Italic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'AngleciaProTitle-BoldItalic';
+    src: url('AngleciaProTitle-BoldItalic.otf');
+    // src: local('Anglecia Pro Title Italic'), local('AngleciaProTitle-Italic'),
+    //     url('AngleciaProTitle-Italic.eot?#iefix') format('embedded-opentype'),
+    //     url('AngleciaProTitle-Italic.woff2') format('woff2'),
+    //     url('AngleciaProTitle-Italic.woff') format('woff'),
+    //     url('AngleciaProTitle-Italic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+// AngleciaProTitle-BoldItalic

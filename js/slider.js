@@ -204,11 +204,11 @@
               setTimeout(function () {
                   $(".global-menu").addClass('global-menu_bg_black');
                   $(".global-menu").removeClass('global-menu_opacity-none');
-              }, 200);
+              }, 50);
               setTimeout(function () {
                   $(".global-menu__link").addClass('global-menu_opacity_black');
                   $(".global-menu__link").removeClass('global-menu_opacity-none');
-              }, 200);
+              }, 50);
               } else {
   
               setTimeout(function () {
@@ -391,11 +391,11 @@
             setTimeout(function () {
                 $(".global-menu").addClass('global-menu_bg');
                 $(".global-menu").removeClass('global-menu_opacity-none');
-            }, 200);
+            }, 50);
             setTimeout(function () {
                 $(".global-menu__link").addClass('global-menu_opacity');
                 $(".global-menu__link").removeClass('global-menu_opacity-none');
-            }, 200);
+            }, 50);
             } else {
 
             setTimeout(function () {
