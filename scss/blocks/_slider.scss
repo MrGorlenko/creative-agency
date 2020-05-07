@@ -28,7 +28,7 @@
         color: #fff;
     }
     &__title{
-        font-family: Anglecia Pro Title;
+        font-family: Anglecia Pro Tit;
         font-style: italic;
         font-weight: bold;
         font-size: 50px;
@@ -638,12 +638,19 @@
             width: 300px;
             font-size: 36px;
             margin-bottom: 0;
+            height: 100px;
+            // position: absolute;
+        }
+        &__line{
+            position: absolute;
+            top: 395px;
+
         }
         &__slider{
             padding-left: 0;
         }
         &__paragraph{
-            height: 95px;
+            height: 155px;
             width: 260px;
             font-size: 16px;
             line-height: 22px;

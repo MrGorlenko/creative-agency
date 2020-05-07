@@ -930,7 +930,7 @@ template {
 }
 
 .slider__title {
-  font-family: Anglecia Pro Title;
+  font-family: Anglecia Pro Tit;
   font-style: italic;
   font-weight: bold;
   font-size: 50px;
@@ -1432,12 +1432,17 @@ template {
     width: 300px;
     font-size: 36px;
     margin-bottom: 0;
+    height: 100px;
+  }
+  .slider__line {
+    position: absolute;
+    top: 395px;
   }
   .slider__slider {
     padding-left: 0;
   }
   .slider__paragraph {
-    height: 95px;
+    height: 155px;
     width: 260px;
     font-size: 16px;
     line-height: 22px;
@@ -1494,7 +1499,7 @@ template {
 }
 
 .reason__title {
-  font-family: Anglecia Pro Title;
+  font-family: Anglecia Pro Tit;
   font-style: italic;
   font-weight: bold;
   font-size: 50px;
@@ -1531,112 +1536,112 @@ template {
 }
 
 .reason__item_1 {
-  background: url("../../img/reasons/logo-netologia.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.reason__item_2 {
-  background: url("../../img/reasons/logo-mailru.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.reason__item_3 {
-  background: url("../../img/reasons/logo-bk.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.reason__item_4 {
-  background: url("../../img/reasons/logo-cinemood.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.reason__item_5 {
-  background: url("../../img/reasons/logo-lamoda.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.reason__item_6 {
-  background: url("../../img/reasons/logo-estee-laude.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.reason__item_7 {
   background: url("../../img/reasons/logo-starbucks.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
 
-.reason__item_8 {
-  background: url("../../img/reasons/logo-voltswagen.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.reason__item_9 {
-  background: url("../../img/reasons/logo-urban.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.reason__item_10 {
+.reason__item_2 {
   background: url("../../img/reasons/logo-sib-mol.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
 
-.reason__item_11 {
-  background: url("../../img/reasons/logo-jardin.svg");
+.reason__item_3 {
+  background: url("../../img/reasons/logo-voltswagen.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
 
-.reason__item_12 {
+.reason__item_4 {
+  background: url("../../img/reasons/logo-netologia.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.reason__item_5 {
+  background: url("../../img/reasons/logo-estee-laude.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.reason__item_6 {
+  background: url("../../img/reasons/logo-mailru.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.reason__item_7 {
   background: url("../../img/reasons/logo-ipsa.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
 
-.reason__item_13 {
+.reason__item_8 {
+  background: url("../../img/reasons/logo-academ.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.reason__item_9 {
+  background: url("../../img/reasons/logo-bk.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.reason__item_10 {
   background: url("../../img/reasons/logo-inter.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
 
-.reason__item_14 {
-  background: url("../../img/reasons/logo-park.svg");
+.reason__item_11 {
+  background: url("../../img/reasons/logo-beauty.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
 
-.reason__item_15 {
+.reason__item_12 {
+  background: url("../../img/reasons/logo-cinemood.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.reason__item_13 {
   background: url("../../img/reasons/logo-ipls.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
 }
 
+.reason__item_14 {
+  background: url("../../img/reasons/logo-lamoda.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.reason__item_15 {
+  background: url("../../img/reasons/logo-jardin.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 .reason__item_16 {
-  background: url("../../img/reasons/logo_exhibitions.svg");
+  background: url("../../img/reasons/logo-reed.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -1672,17 +1677,11 @@ template {
     overflow: hidden;
     align-items: center;
   }
-  .reason__item:nth-child(2) {
-    display: none;
+  .reason__icons {
+    flex-wrap: wrap;
   }
-  .reason__item:nth-child(5) {
-    display: none;
-  }
-  .reason__item:first-child {
-    display: none;
-  }
-  .reason__item:last-child {
-    display: none;
+  .reason__item {
+    width: 25%;
   }
 }
 
@@ -1727,11 +1726,9 @@ template {
     width: 100%;
   }
   .reason__item {
-    width: 60px;
-    height: 60px;
+    width: 25%;
   }
   .reason__icons {
-    height: 63px;
     margin: auto;
     width: 310px;
     margin-top: 35px;
@@ -1892,7 +1889,7 @@ template {
   }
   .form__container {
     padding-left: 25%;
-    min-height: 65%;
+    min-height: 60%;
     margin-bottom: 0;
   }
 }
@@ -2228,10 +2225,11 @@ template {
 
 .footer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: flex-start;
-  width: 80%;
+  width: 60%;
   margin: auto;
+  padding-left: 40%;
 }
 
 .footer__link {
@@ -2256,5 +2254,18 @@ template {
 
 .footer__link a {
   margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    margin: initial;
+    padding-left: 25%;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer {
+    padding-left: 5%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
