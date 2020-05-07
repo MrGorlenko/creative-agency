@@ -42,6 +42,16 @@
     sliderCollage = $('.slider__picture');
 
 
+    sliderLink.on('click', function(){
+      $('.slider__video').addClass('z-index-a');
+      $('.slider__video').addClass('display-block');
+      // display-block
+    })
+
+    menuWhite.on('click', function(){
+      $('.slider__video').removeClass('z-index-a');
+      $('.slider__video').removeClass('display-block');
+    })
 
 
     function myFunctionCircle(k) {
